@@ -1,0 +1,29 @@
+@import './font';
+@import './variables.scss';
+
+:root {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  background-color: $neutral-200;
+}
+
+body {
+  font-family: Inter, san-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin: 0;
+}
+
+.SuperContainer {
+  height: calc(100vh - 55.9px - 127px);
+  overflow-y: auto;
+  padding-bottom: 48px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
