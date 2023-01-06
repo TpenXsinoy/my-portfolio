@@ -68,7 +68,7 @@ IconButton.defaultProps = {
   kind: GLOBALS.BUTTON_KINDS.BUTTON,
   tabIndex: 0,
   id: null,
-  colorName: GLOBALS.COLOR_NAMES.YELLOW,
+  colorName: GLOBALS.COLOR_NAMES.GREEN,
 }
 
 IconButton.propTypes = {
@@ -96,8 +96,8 @@ IconButton.propTypes = {
   ]),
   id: PropTypes.string,
   colorName: PropTypes.oneOf([
-    GLOBALS.COLOR_NAMES.YELLOW,
-    GLOBALS.COLOR_NAMES.RED,
+    GLOBALS.COLOR_NAMES.BLACK,
+    GLOBALS.COLOR_NAMES.GRAY,
     GLOBALS.COLOR_NAMES.GREEN
   ]),
 }

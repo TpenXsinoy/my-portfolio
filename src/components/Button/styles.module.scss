@@ -5,36 +5,48 @@ $yellow-shadow: 0px 8px 40px -8px rgba(248, 209, 29, 0.35);
 
 .Button {
   &___primary {
-    &___red {
-      @include primary($neutral-200, $neutral-400, $neutral-400, $neutral-0, $red-shadow);
+    &___green {
+      @include primary(
+        $gray-200, 
+        $green-200, 
+        $green-200, 
+        $neutral-0, 
+        $red-shadow
+      );
     }
 
-    &___yellow {
+    &___gray {
       @include primary(
-        $neutral-200,
-        $neutral-200,
-        $neutral-500,
+        $green-200,
+        $gray-200,
+        $neutral-400,
         $neutral-0,
         $yellow-shadow
       );
     }
   }
 
+  &___secondary {
+    &___green {
+      @include secondary($green-200);
+    }
+  }  
+
   &___link {
     display: block;
   }
 
   &___text {
-    &___red {
-      @include textButton($neutral-200);
+    &___green {
+      @include textButton($green-200);
     }
     
-    &___yellow {
-      @include textButton($neutral-200);
+    &___gray {
+      @include textButton($gray-200);
     }
 
-    &___gray {
-      @include textButton($neutral-300);
+    &___black {
+      @include textButton($black-500);
     }
 
     &___white {

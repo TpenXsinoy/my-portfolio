@@ -55,9 +55,9 @@ Button.defaultProps = {
   icon: null,
   id: null,
   kind: GLOBALS.BUTTON_KINDS.BUTTON,
-  lockedIconClassName: null,
   tabIndex: 0,
-  type: buttonTypes.PRIMARY.YELLOW,
+  type: buttonTypes.PRIMARY.GREEN,
+  wrapperClassName: null,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   onClick: () => {}
 }
@@ -69,10 +69,11 @@ Button.propTypes = {
     GLOBALS.BUTTON_KINDS.RESET
   ]),
   type: PropTypes.oneOf([
-    buttonTypes.PRIMARY.RED,
-    buttonTypes.PRIMARY.YELLOW,
-    buttonTypes.TEXT.RED,
-    buttonTypes.TEXT.YELLOW,
+    buttonTypes.PRIMARY.GREEN,
+    buttonTypes.PRIMARY.GRAY,
+    buttonTypes.TEXT.GREEN,
+    buttonTypes.TEXT.WHITE,
+    buttonTypes.TEXT.BLACK,
     buttonTypes.TEXT.GRAY
   ]),
   innerRef: PropTypes.any,

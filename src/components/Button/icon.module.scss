@@ -3,7 +3,7 @@
 @mixin solid($size) {
   @include ease(0.3s);
   cursor: pointer;
-  background: $neutral-200;
+  background: $black-500;
   border-radius: 100px;
   border: none;
   box-shadow: $shadow-raised;
@@ -15,10 +15,12 @@
   @include flex-center;
 
   &:hover {
-    background: $black-500;
+    background: $green-200;
   }
 
   .IconButton_icon {
+    color: $neutral-0;
+
     @if $size == xs {
       font-size: 1rem;
     } @else if $size == sm {
@@ -123,16 +125,16 @@
     pointer-events: none;
   }
 
-  &___yellow {
-    @include buttonColor($neutral-200);
+  &___green {
+    @include buttonColor($green-200);
   }
 
-  &___brown {
-    @include buttonColor($neutral-500);
+  &___gray {
+    @include buttonColor($gray-200);
   }
 
-  &___red {
-    @include buttonColor($neutral-200);
+  &___black {
+    @include buttonColor($black-500);
   }
 
   &___neutral {

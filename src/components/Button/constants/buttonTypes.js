@@ -1,11 +1,14 @@
 const buttonTypes = {
   PRIMARY: {
-    RED: 'primary___red',
-    YELLOW: 'primary___yellow'
+    GREEN: 'primary___green',
+    GRAY: 'primary___gray'
+  },
+  SECONDARY: {
+    GREEN: 'secondary___green'
   },
   TEXT: {
-    RED: 'text___red',
-    YELLOW: 'text___yellow',
+    GREEN: 'text___green',
+    BLACK: 'text___black',
     GRAY: 'text___gray',
     WHITE: 'text___white'
   }

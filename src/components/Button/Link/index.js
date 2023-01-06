@@ -80,7 +80,7 @@ const ButtonLink = ({
 }
 
 ButtonLink.defaultProps = {
-  type: buttonTypes.PRIMARY.YELLOW,
+  type: buttonTypes.SECONDARY.GREEN,
   className: null,
   id: null,
   icon: null,
