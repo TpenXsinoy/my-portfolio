@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import cn from 'classnames'
-import PropTypes from 'prop-types'
+import cn from "classnames";
+import PropTypes from "prop-types";
 
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import Icon from '../../Icon'
-import buttonTypes from '../constants/buttonTypes'
-import styles from '../styles.module.scss'
+import Icon from "../../Icon";
+import buttonTypes from "../constants/buttonTypes";
+import styles from "../styles.module.scss";
 
 const ButtonLink = ({
   children,
@@ -19,7 +19,7 @@ const ButtonLink = ({
   tabIndex,
   disabled,
   onClick,
-  shouldOpenNewTab
+  shouldOpenNewTab,
 }) => {
   const allChildren = (
     <>
@@ -32,10 +32,9 @@ const ButtonLink = ({
       )}
       {children}
     </>
-  )
+  );
 
-  return to.startsWith('http')
-    ? (
+  return to.startsWith("http") ? (
     <a
       className={cn(
         className,
@@ -43,7 +42,7 @@ const ButtonLink = ({
         styles[`Button___${type}`],
         {
           [styles.Button___withIcon]: icon !== null,
-          [styles.Button___disabled]: disabled
+          [styles.Button___disabled]: disabled,
         }
       )}
       data-test="nativeAnchor"
@@ -51,13 +50,12 @@ const ButtonLink = ({
       id={id}
       rel="noreferrer"
       tabIndex={tabIndex}
-      target={shouldOpenNewTab ? '_blank' : null}
+      target={shouldOpenNewTab ? "_blank" : null}
       onClick={onClick}
     >
       {allChildren}
     </a>
-      )
-    : (
+  ) : (
     <Link
       className={cn(
         className,
@@ -65,7 +63,7 @@ const ButtonLink = ({
         styles[`Button___${type}`],
         {
           [styles.Button___withIcon]: icon !== null,
-          [styles.Button___disabled]: disabled
+          [styles.Button___disabled]: disabled,
         }
       )}
       data-test="reactRouterLink"
@@ -76,8 +74,8 @@ const ButtonLink = ({
     >
       {allChildren}
     </Link>
-      )
-}
+  );
+};
 
 ButtonLink.defaultProps = {
   type: buttonTypes.SECONDARY.GREEN,
@@ -88,13 +86,13 @@ ButtonLink.defaultProps = {
   disabled: false,
   onClick: null,
   shouldOpenNewTab: true,
-}
+};
 
 ButtonLink.propTypes = {
   type: PropTypes.oneOf([
     buttonTypes.PRIMARY.RED,
     buttonTypes.PRIMARY.YELLOW,
-    buttonTypes.TEXT.RED
+    buttonTypes.TEXT.RED,
   ]),
   children: PropTypes.any.isRequired,
   className: PropTypes.string,
@@ -105,6 +103,6 @@ ButtonLink.propTypes = {
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   shouldOpenNewTab: PropTypes.bool,
-}
+};
 
-export default ButtonLink
+export default ButtonLink;

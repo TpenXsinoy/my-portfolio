@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import cn from 'classnames'
-import PropTypes from 'prop-types'
+import cn from "classnames";
+import PropTypes from "prop-types";
 
-import GLOBALS from '../../../app-globals'
+import GLOBALS from "../../../app-globals";
 
-import Icon from '../../Icon'
-import iconButtonTypes from '../constants/iconButtonTypes'
+import Icon from "../../Icon";
+import iconButtonTypes from "../constants/iconButtonTypes";
 
-import styles from '../icon.module.scss'
+import styles from "../icon.module.scss";
 
 const isTypeOutline = (type) => {
   switch (type) {
@@ -16,11 +16,11 @@ const isTypeOutline = (type) => {
     case iconButtonTypes.OUTLINE.SM:
     case iconButtonTypes.OUTLINE.MD:
     case iconButtonTypes.OUTLINE.LG:
-      return true
+      return true;
     default:
-      return false
+      return false;
   }
-}
+};
 
 const IconButton = ({
   icon,
@@ -38,7 +38,7 @@ const IconButton = ({
   return (
     <button
       className={cn(className, styles[`IconButton___${type}`], {
-        [styles[`IconButton___${colorName}`]]: isTypeOutline(type)
+        [styles[`IconButton___${colorName}`]]: isTypeOutline(type),
       })}
       // eslint-disable-next-line
       data-test="button"
@@ -55,8 +55,8 @@ const IconButton = ({
         style={style}
       />
     </button>
-  )
-}
+  );
+};
 
 IconButton.defaultProps = {
   className: null,
@@ -69,7 +69,7 @@ IconButton.defaultProps = {
   tabIndex: 0,
   id: null,
   colorName: GLOBALS.COLOR_NAMES.GREEN,
-}
+};
 
 IconButton.propTypes = {
   type: PropTypes.oneOf([
@@ -80,7 +80,7 @@ IconButton.propTypes = {
     iconButtonTypes.OUTLINE.LG,
     iconButtonTypes.OUTLINE.MD,
     iconButtonTypes.OUTLINE.SM,
-    iconButtonTypes.OUTLINE.XS
+    iconButtonTypes.OUTLINE.XS,
   ]),
   className: PropTypes.string,
   icon: PropTypes.string.isRequired,
@@ -92,14 +92,14 @@ IconButton.propTypes = {
   kind: PropTypes.oneOf([
     GLOBALS.BUTTON_KINDS.BUTTON,
     GLOBALS.BUTTON_KINDS.SUBMIT,
-    GLOBALS.BUTTON_KINDS.RESET
+    GLOBALS.BUTTON_KINDS.RESET,
   ]),
   id: PropTypes.string,
   colorName: PropTypes.oneOf([
     GLOBALS.COLOR_NAMES.BLACK,
     GLOBALS.COLOR_NAMES.GRAY,
-    GLOBALS.COLOR_NAMES.GREEN
+    GLOBALS.COLOR_NAMES.GREEN,
   ]),
-}
+};
 
-export default IconButton
+export default IconButton;

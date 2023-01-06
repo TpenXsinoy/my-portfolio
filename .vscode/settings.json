@@ -1,24 +1,20 @@
 {
-    "[javascript]": {
-      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-    },
-    "[scss]": {
-      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-    },
-    "eslint.packageManager": "yarn",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "eslint.validate": ["javascript"],
-    "eslint.alwaysShowStatus": true,
-    "prettier.stylelintIntegration": true,
-    "prettier.eslintIntegration": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "css.validate": false,
-    "scss.validate": false
-  }
-  
+  "[scss]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "editor.formatOnSave": true,
+  "eslint.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "eslint.alwaysShowStatus": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

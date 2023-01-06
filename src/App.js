@@ -1,13 +1,12 @@
-import React, { useEffect } from 'react'
-import 'material-icons/iconfont/material-icons.css'
-import { Button, ButtonLink, IconButton } from '../src/components';
-import './styles/App.scss';
+import React, { useEffect } from "react";
+import "material-icons/iconfont/material-icons.css";
+import { Button, ButtonLink, IconButton } from "../src/components";
+import "./styles/App.scss";
 
 function App() {
-
   useEffect(() => {
-    document.title = 'Stephine Sinoy'
-  }, [])
+    document.title = "Stephine Sinoy";
+  }, []);
 
   return (
     <div className="App">

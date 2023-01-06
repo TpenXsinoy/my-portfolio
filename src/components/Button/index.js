@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import cn from 'classnames'
-import PropTypes from 'prop-types'
+import cn from "classnames";
+import PropTypes from "prop-types";
 
-import GLOBALS from '../../app-globals'
-import { Icon } from '../index'
-import { buttonTypes } from '../constants'
-import styles from './styles.module.scss'
+import GLOBALS from "../../app-globals";
+import { Icon } from "../index";
+import { buttonTypes } from "../constants";
+import styles from "./styles.module.scss";
 
 const Button = ({
   children,
@@ -19,17 +19,17 @@ const Button = ({
   kind,
   tabIndex,
   type,
-  onClick
+  onClick,
 }) => {
- return (
+  return (
     <button
-      ref={e => {
+      ref={(e) => {
         if (innerRef) {
-          innerRef.current = e
+          innerRef.current = e;
         }
       }}
       className={cn(className, styles[`Button___${type}`], {
-        [styles.Button___withIcon]: icon !== null
+        [styles.Button___withIcon]: icon !== null,
       })}
       disabled={disabled}
       id={id}
@@ -37,17 +37,16 @@ const Button = ({
       type={kind}
       onClick={onClick}
     >
- 
-    {icon && (
-    <Icon
-        className={cn(styles.Button___withIcon_icon, iconClassName)}
-        icon={icon}
-    />
-    )}
-    {children}
+      {icon && (
+        <Icon
+          className={cn(styles.Button___withIcon_icon, iconClassName)}
+          icon={icon}
+        />
+      )}
+      {children}
     </button>
-  )
-}
+  );
+};
 
 Button.defaultProps = {
   className: null,
@@ -59,14 +58,14 @@ Button.defaultProps = {
   type: buttonTypes.PRIMARY.GREEN,
   wrapperClassName: null,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  onClick: () => {}
-}
+  onClick: () => {},
+};
 
 Button.propTypes = {
   kind: PropTypes.oneOf([
     GLOBALS.BUTTON_KINDS.BUTTON,
     GLOBALS.BUTTON_KINDS.SUBMIT,
-    GLOBALS.BUTTON_KINDS.RESET
+    GLOBALS.BUTTON_KINDS.RESET,
   ]),
   type: PropTypes.oneOf([
     buttonTypes.PRIMARY.GREEN,
@@ -74,7 +73,7 @@ Button.propTypes = {
     buttonTypes.TEXT.GREEN,
     buttonTypes.TEXT.WHITE,
     buttonTypes.TEXT.BLACK,
-    buttonTypes.TEXT.GRAY
+    buttonTypes.TEXT.GRAY,
   ]),
   innerRef: PropTypes.any,
   children: PropTypes.any.isRequired,
@@ -85,6 +84,6 @@ Button.propTypes = {
   icon: PropTypes.string,
   tabIndex: PropTypes.number,
   iconClassName: PropTypes.string,
-}
+};
 
-export default Button
+export default Button;
