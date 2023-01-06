@@ -17,7 +17,6 @@
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "react-social-icons": "^5.15.0",
-    "sass": "^1.57.1",
     "slick-carousel": "^1.8.1",
     "tippy.js": "^6.3.7",
     "web-vitals": "^2.1.4"
@@ -47,6 +46,23 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.31.0"
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^26.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.1",
+    "sass": "^1.57.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-scss": "^4.3.0",
+    "typescript": "^4.9.4"
   }
 }
