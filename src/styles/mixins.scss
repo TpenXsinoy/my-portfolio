@@ -159,7 +159,7 @@
   
 @mixin secondary($color) {
     @extend .buttonBase;
-    color: $color;
+    color: $neutral-0;
     background-color: transparent;
     border-radius: 100px;
     padding: 10px 24px;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import 'material-icons/iconfont/material-icons.css'
-import { Button, Icon, ButtonLink, IconButton } from '../src/components';
+import { Button, ButtonLink, IconButton } from '../src/components';
 import './styles/App.scss';
 
 function App() {
@@ -13,8 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Button icon="phone">ASDAS</Button>
-        <Icon icon='call'/>
-        <ButtonLink to="https://www.facebook.com/">asdas</ButtonLink>
+        <ButtonLink to="https://www.facebook.com/">checkout webpage</ButtonLink>
         <IconButton icon="phone"> asdasdas </IconButton>
       </header>
     </div>
