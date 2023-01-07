@@ -1,0 +1,72 @@
+@use '../../styles' as *;
+
+.Footer {
+  background: $black-500;
+  margin-top: auto;
+  padding: 10px 0 10px;
+
+  &_container {
+    @include flex-between;
+    width: 100%;
+  }
+
+  &_logo {
+    cursor: pointer;
+    @include flex-center;
+
+    &_img {
+      margin-right: 12px;
+    }
+  }
+
+  &_info {
+    @include flex-end;
+
+    &_socials {
+      border-right: 2px solid $green-100;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-right: 24px;
+      padding-right: 24px;
+
+      @include breakpoint(sm) {
+        margin-right: 12px;
+        padding-right: 12px;
+      }
+
+      &_icon {
+        height: 36px !important;
+        width: 36px !important;
+
+        @include breakpoint(sm) {
+          height: 28px !important;
+          width: 28px !important;
+        }
+
+        @include breakpoint(xs) {
+          height: 24px !important;
+          width: 24px !important;
+        }
+
+        >div {
+          >svg {
+            >g {
+              &:nth-of-type(3) {
+                fill: $neutral-0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &_text {
+      @include flex-center;
+
+      @include breakpoint(xs) {
+        font-size: 12px;
+      }
+    }
+  }
+}
