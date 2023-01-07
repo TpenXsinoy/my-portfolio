@@ -2,6 +2,14 @@
 
 .Text {
   &___heading {
+    &___xxxxl {
+      @include heading(96px, 1.25);
+    }
+
+    &___xxxl {
+      @include heading(48px, 1.25);
+    }
+
     &___xxl {
       @include heading(40px, 1.25);
     }

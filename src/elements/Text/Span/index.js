@@ -47,6 +47,8 @@ Span.propTypes = {
     GLOBALS.COLOR_CLASSES.GRAY["200"],
   ]),
   type: PropTypes.oneOf([
+    textTypes.HEADING.XXXXL,
+    textTypes.HEADING.XXXL,
     textTypes.HEADING.XXL,
     textTypes.HEADING.XL,
     textTypes.HEADING.LG,

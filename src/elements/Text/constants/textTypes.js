@@ -1,5 +1,7 @@
 const textTypes = {
   HEADING: {
+    XXXXL: "heading___xxxxl",
+    XXXL: "heading___xxxl",
     XXL: "heading___xxl",
     XL: "heading___xl",
     LG: "heading___lg",

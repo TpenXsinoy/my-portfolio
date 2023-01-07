@@ -49,7 +49,7 @@ Text.defaultProps = {
   id: null,
   className: null,
   children: null,
-  colorClass: GLOBALS.COLOR_CLASSES.NEUTRAL["700"],
+  colorClass: GLOBALS.COLOR_CLASSES.NEUTRAL["0"],
   type: textTypes.BODY.MD,
   element: null,
 };
@@ -76,6 +76,8 @@ Text.propTypes = {
     GLOBALS.COLOR_CLASSES.GRAY["200"],
   ]),
   type: PropTypes.oneOf([
+    textTypes.HEADING.XXXXL,
+    textTypes.HEADING.XXXL,
     textTypes.HEADING.XXL,
     textTypes.HEADING.XL,
     textTypes.HEADING.LG,
