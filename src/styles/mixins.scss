@@ -18,6 +18,12 @@
     justify-content: flex-start;
 }
 
+@mixin flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 @mixin text-ellipsis {
     white-space: nowrap;
     overflow: hidden;
@@ -75,7 +81,7 @@
 
 // Text Styles  
 @mixin heading($size, $height) {
-  font-family: Montserrat, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: $size;
   line-height: $height;
   font-weight: 700;
