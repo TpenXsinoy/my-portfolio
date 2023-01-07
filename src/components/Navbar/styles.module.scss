@@ -1,0 +1,112 @@
+@use '../../styles' as *;
+
+.Navbar {
+  background: $black-500;
+  left: 0;
+  padding: 5px 0 10px;
+  position: fixed;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+  right: 0;
+  @include flex-center;
+
+  &_container {
+    @include flex-between;
+    width: 100%;
+  }
+
+  &_logo {
+    cursor: pointer;
+    @include flex-center;
+
+    &_img {
+      margin-right: 12px;
+    }
+  }
+
+  &_links {
+    @include flex-end;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+
+    &_link {
+      cursor: pointer;
+      opacity: 0.75;
+
+      &:hover {
+        opacity: 1;
+      }
+      
+      &_text {
+        padding: 16px 24px;
+
+        @include breakpoint(md) {
+          text-align: center;
+        }
+
+        &::before {
+          transition: 300ms;
+          height: 3px;
+          content: "";
+          position: absolute;
+          background-color: $green-100;
+        }
+      }
+
+      &_ltr {
+        &::before {
+          width: 0%;
+          bottom: 24px;
+        }
+  
+        &:hover {
+          &::before {
+            width: 32px;
+          }
+        }
+      }
+    }
+
+  
+  }
+
+  &_buttonIcon {
+    cursor: pointer;
+    color: $green-100;
+    display: none;
+    font-size: 28px;
+
+    @include breakpoint(md) {
+      display: flex;
+    }
+  }
+
+  &_mobileMenu {
+    align-items: center;
+    background-color: $green-100;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+
+    @include breakpoint(md) {
+      display: flex;
+      z-index: 1;
+    }
+
+    &_close {
+      cursor: pointer;
+      color: $blue-400;
+      font-size: 28px;
+      position: absolute;
+      right: 24px;
+      top: 24px;
+    }
+  }
+}
