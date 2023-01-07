@@ -15,7 +15,7 @@
   @include flex-center;
 
   &:hover {
-    background: $green-200;
+    background: $green-100;
   }
 
   .IconButton_icon {
@@ -126,7 +126,7 @@
   }
 
   &___green {
-    @include buttonColor($green-200);
+    @include buttonColor($green-100);
   }
 
   &___gray {

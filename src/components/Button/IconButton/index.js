@@ -3,9 +3,9 @@ import React from "react";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-import GLOBALS from "../../../app-globals";
+import GLOBALS from "app-globals";
 
-import Icon from "../../Icon";
+import { Icon } from "../..";
 import iconButtonTypes from "../constants/iconButtonTypes";
 
 import styles from "../icon.module.scss";

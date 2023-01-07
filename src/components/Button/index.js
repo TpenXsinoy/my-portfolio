@@ -3,9 +3,10 @@ import React from "react";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-import GLOBALS from "../../app-globals";
-import { Icon } from "../index";
-import { buttonTypes } from "../constants";
+import GLOBALS from "app-globals";
+
+import { Icon } from "..";
+import { buttonTypes } from "./constants";
 import styles from "./styles.module.scss";
 
 const Button = ({

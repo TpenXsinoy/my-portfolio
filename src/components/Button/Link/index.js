@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 import { Link } from "react-router-dom";
 
-import Icon from "../../Icon";
+import { Icon } from "../..";
 import buttonTypes from "../constants/buttonTypes";
 import styles from "../styles.module.scss";
 
