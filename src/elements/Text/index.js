@@ -4,7 +4,6 @@ import cn from "classnames";
 import PropTypes from "prop-types";
 
 import GLOBALS from "app-globals";
-
 import textTypes from "./constants/textTypes";
 import styles from "./styles.module.scss";
 

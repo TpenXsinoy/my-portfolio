@@ -17,13 +17,3 @@ body {
 p {
   margin: 0;
 }
-
-.SuperContainer {
-  height: calc(100vh - 55.9px - 127px);
-  overflow-y: auto;
-  padding-bottom: 48px;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}

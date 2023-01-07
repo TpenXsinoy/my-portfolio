@@ -3,7 +3,7 @@
 .Text {
   &___heading {
     &___xxl {
-      @include heading(40px, 125);
+      @include heading(40px, 1.25);
     }
 
     &___xl {
