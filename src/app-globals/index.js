@@ -4,6 +4,7 @@ import COLOR_HEX_CODES from "./colorHexCodes";
 import COLOR_NAMES from "./colorNames";
 import FONT_SIZES from "./fontSizes";
 import FONT_WEIGHTS from "./fontWeights";
+import WINDOW_SIZES from "./windowSizes";
 
 const GLOBALS = {
   BUTTON_KINDS,
@@ -12,6 +13,7 @@ const GLOBALS = {
   COLOR_NAMES,
   FONT_SIZES,
   FONT_WEIGHTS,
+  WINDOW_SIZES,
 };
 
 export default GLOBALS;
