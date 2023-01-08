@@ -1,5 +1,7 @@
 const textTypes = {
   HEADING: {
+    XXXXXXL: "heading___xxxxxxl",
+    XXXXXL: "heading___xxxxxl",
     XXXXL: "heading___xxxxl",
     XXXL: "heading___xxxl",
     XXL: "heading___xxl",
@@ -12,6 +14,7 @@ const textTypes = {
     XXXS: "heading___xxxs",
   },
   BODY: {
+    XL: "body___xl",
     LG: "body___lg",
     MD: "body___md",
     SM: "body___sm",

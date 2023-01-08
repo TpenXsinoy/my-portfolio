@@ -2,8 +2,16 @@
 
 .Text {
   &___heading {
-    &___xxxxl {
+    &___xxxxxxl {
       @include heading(96px, 1.25);
+    }
+
+    &___xxxxxl {
+      @include heading(72px, 1.25);
+    }
+
+    &___xxxxl {
+      @include heading(60px, 1.25);
     }
 
     &___xxxl {
@@ -44,6 +52,10 @@
   }
 
   &___body {
+    &___xl {
+      @include body(24px, 2);
+    }
+
     &___lg {
       @include body(1.125rem, 2);
     }
