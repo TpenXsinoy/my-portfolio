@@ -3,15 +3,92 @@
 
 :root {
   font-size: 16px;
+}
+
+html {
   background-color: $blue-400;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Inter, san-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-p {
+main {
   margin: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $neutral-700;
+  font-family: Inter, san-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+p,
+li {
+  font-family: Inter;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// React Modal
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+// Slick
+.slick-prev,
+.slick-next {
+  height: 40px !important;
+  width: 40px !important;
+
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.slick-next {
+  right: -60px !important;
+}
+
+.slick-prev {
+  left: -60px !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: $blue-400 !important;
+  font-size: 40px !important;
+}
+
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots li.slick-active button::before {
+  color: $blue-400 !important;
+}
+
+.slick-dots li button::before {
+  font-size: 12px !important;
 }
