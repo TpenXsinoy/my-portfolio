@@ -58,7 +58,7 @@ const Navbar = () => {
               colorClass={GLOBALS.COLOR_CLASSES.GREEN["100"]}
               type={textTypes.HEADING.MD}
             >
-              Stephine Sinoy
+              Logo
             </Text>
           </Link>
 
@@ -69,6 +69,9 @@ const Navbar = () => {
                 to={link.id}
                 className={styles.Navbar_links_link}
                 key={link.id}
+                smooth
+                offset={-200}
+                duration={700}
               >
                 <Text
                   className={cn(
