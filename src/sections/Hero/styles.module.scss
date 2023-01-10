@@ -1,7 +1,6 @@
 @use '../../styles' as *;
 
 .Hero {
-  height: 120vh;
   padding-top: 60px;
   
   @include breakpoint(md) {
