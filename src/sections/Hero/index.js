@@ -100,13 +100,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.Hero_image}>
-          <img
-            src={Profile}
-            className={styles.Hero_image_pic}
-            alt="Profile"
-            // width={40}
-            // height={40}
-          />
+          <img src={Profile} alt="Profile" />
         </div>
       </Container>
     </Section>
