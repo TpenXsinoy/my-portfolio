@@ -1,0 +1,18 @@
+@use '../../styles' as *;
+
+.Contact {
+  &_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    margin-top: 40px;
+
+    @include breakpoint(md) {
+      grid-template-columns: 1fr;
+    }
+
+    @include breakpoint(sm) {
+      gap: 24px;
+    }
+  }
+}
