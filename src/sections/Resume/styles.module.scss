@@ -1,0 +1,26 @@
+@use '../../styles' as *;
+
+.Resume {
+  &_information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include breakpoint(sm) {
+      grid-template-columns: 1fr;
+    }
+
+    > div {
+      &:nth-of-type(3){
+        margin-top: -10rem;
+
+        @include breakpoint(md) {
+          margin-top: -12rem;
+        }
+
+        @include breakpoint(sm) {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
