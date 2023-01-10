@@ -67,12 +67,17 @@ const Skills = [
 ];
 
 const About = () => {
-  const { isSmallMobile, isMobile, isTablet, isSmallDesktop } = useWindowSize();
+  const { isSmallMobile, isMobile, isTablet, isSmallDesktop, isDesktop } =
+    useWindowSize();
   return (
     <Section
-      // title="ABOUT ME"
-      // subInfo={GLOBALS.SUB_INFO.ABOUT}
       className={styles.About}
+      id={(() => {
+        if (isSmallDesktop || isDesktop) {
+          return null;
+        }
+        return "about";
+      })()}
     >
       <Container className={styles.About_container}>
         <SectionHeader

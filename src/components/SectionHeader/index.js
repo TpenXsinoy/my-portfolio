@@ -37,7 +37,10 @@ const SectionHeader = ({ title, subInfo, id }) => {
       </div>
 
       {subInfo && (
-        <Text className={styles.SectionHeader_subInfo} id={id}>
+        <Text
+          className={styles.SectionHeader_subInfo}
+          id={isSmallDesktop || isDesktop ? id : null}
+        >
           {subInfo}
         </Text>
       )}

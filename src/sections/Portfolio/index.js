@@ -2,6 +2,7 @@ import React from "react";
 
 import GLOBALS from "app-globals";
 
+import { useWindowSize } from "hooks";
 import { ProjectListsCard, SectionHeader } from "components";
 import { Container, Section } from "elements";
 
@@ -44,8 +45,17 @@ const Projects = [
 ];
 
 const Portfolio = () => {
+  const { isSmallDesktop, isDesktop } = useWindowSize();
   return (
-    <Section className={styles.Portfolio}>
+    <Section
+      className={styles.Portfolio}
+      id={(() => {
+        if (isSmallDesktop || isDesktop) {
+          return null;
+        }
+        return "portfolio";
+      })()}
+    >
       <Container className={styles.Portfolio_container}>
         <SectionHeader
           title="PORTFOLIO"

@@ -90,9 +90,13 @@ ButtonLink.defaultProps = {
 
 ButtonLink.propTypes = {
   type: PropTypes.oneOf([
-    buttonTypes.PRIMARY.RED,
-    buttonTypes.PRIMARY.YELLOW,
-    buttonTypes.TEXT.RED,
+    buttonTypes.PRIMARY.GREEN,
+    buttonTypes.PRIMARY.GRAY,
+    buttonTypes.SECONDARY.GREEN,
+    buttonTypes.TEXT.GREEN,
+    buttonTypes.TEXT.WHITE,
+    buttonTypes.TEXT.BLACK,
+    buttonTypes.TEXT.GRAY,
   ]),
   children: PropTypes.any.isRequired,
   className: PropTypes.string,
