@@ -1,0 +1,62 @@
+@use '../../styles' as *;
+
+.ContactCard {
+  background-color: $gray-200;
+  box-shadow: $shadow-normal;
+  border: none;
+  display: flex;
+  padding: 16px 36px 22px 24px;
+
+  @include breakpoint(xs) {
+    padding: 16px;
+  }
+
+  &_icon {
+    color: $green-100;
+    background: $blue-400;
+    border-radius: 50px 50px;
+    font-size: 24px;
+    padding: 16px;
+
+    @include breakpoint(sm) {
+      font-size: 20px;
+      padding: 14px;
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+
+    &_detail {
+      @include breakpoint(sm) {
+        font-size: 14px;
+      }
+    }
+
+    &_socials {
+      display: flex;
+      &_container {
+      }
+      
+      &_icon {
+        height: 36px !important;
+        width: 36px !important;
+
+        &:hover {
+          >div {
+            >svg {
+              >g {
+                &:nth-of-type(2) {
+                  fill: $green-100 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
