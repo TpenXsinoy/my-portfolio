@@ -1,0 +1,35 @@
+@use '../../styles' as *;
+
+.Modal {
+  background-color: $gray-200;
+  border: none;
+  max-width: 768px;
+  padding: 2em 6em 2em 6em;
+  width: 100%;
+
+  @include breakpoint(sm) {
+    padding: 2em;
+    width: calc(100% - 32px);
+  }
+
+  &_heading {
+    margin-bottom: 8px;
+
+    @include breakpoint(xs) {
+      font-size: 20px;
+    }  
+
+    &_helper {
+      margin-bottom: 12px;
+
+      @include breakpoint(xs) {
+        font-size: 14px;
+      }  
+  
+    }
+  }
+
+  &_button {
+    margin-top: 60px;
+  }
+}
