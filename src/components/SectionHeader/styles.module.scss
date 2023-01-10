@@ -1,0 +1,35 @@
+@use '../../styles' as *;
+
+.SectionHeader {
+  display: grid;
+  gap: 32px;
+
+  @include breakpoint(xs) {
+    gap: 24px;
+  }
+  
+  &_title {
+    position: relative;
+
+    @include breakpoint(md) {
+      @include flex-center;
+      flex-direction: column;
+    }
+
+    &_line {
+      background-color: $green-100;
+      height: 4px;
+      width: 100px;
+    }
+  }
+
+  &_subInfo {
+    @include breakpoint(md) {
+      text-align: center;
+    }
+
+    @include breakpoint(xs) {
+      font-size: 14px !important;
+    }
+  }
+}
