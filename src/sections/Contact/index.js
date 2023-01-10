@@ -33,7 +33,7 @@ const ContactInfo = [
 ];
 
 const Contact = () => (
-  <Section className={styles.Contact}>
+  <Section className={styles.Contact} id="contact">
     <Container className={styles.Contact_container}>
       <SectionHeader title="CONTACT" id="contact" />
       <div className={styles.Contact_details}>

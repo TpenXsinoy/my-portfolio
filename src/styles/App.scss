@@ -77,7 +77,7 @@ li {
 
 .slick-prev::before,
 .slick-next::before {
-  color: $blue-400 !important;
+  color: $green-100 !important;
   font-size: 40px !important;
 }
 
@@ -86,7 +86,7 @@ li {
 }
 
 .slick-dots li.slick-active button::before {
-  color: $blue-400 !important;
+  color: $green-100 !important;
 }
 
 .slick-dots li button::before {

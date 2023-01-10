@@ -28,7 +28,7 @@
 
   &_close {
     align-items: center;
-    background-color: $neutral-700;
+    background-color: $green-100;
     border: none;
     border-radius: 100%;
     cursor: pointer;
@@ -45,7 +45,7 @@
   }
 
   &_closeIcon {
-    color: $neutral-0;
+    color: $black-500;
     font-size: 24px;
   }
 }

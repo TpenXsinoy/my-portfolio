@@ -19,7 +19,7 @@ const Projects = [
     name: "XMuse",
     detail:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint",
-    link: "",
+    link: "/",
   },
   {
     image: Codechum,
@@ -33,14 +33,14 @@ const Projects = [
     name: "Alivee",
     detail:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint",
-    link: "",
+    link: "/",
   },
   {
     image: Todo,
     name: "Todo App",
     detail:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint",
-    link: "",
+    link: "/",
   },
 ];
 
