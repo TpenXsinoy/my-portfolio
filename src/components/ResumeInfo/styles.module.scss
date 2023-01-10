@@ -1,0 +1,68 @@
+@use '../../styles' as *;
+
+.ResumeInfo {
+  margin-top: 40px;
+
+  &_title {
+    margin-bottom: 16px;
+  }
+  &_infos {
+    border-left: 2px solid $neutral-500;
+    padding: 0 24px 12px 24px; 
+    position: relative;
+
+    &_circle {
+      background-color: $green-100;
+      border-radius: 50px 50px;
+      height: 24px;
+      left: -13px;
+      position: absolute;
+      width: 24px;
+    }
+
+    &_subInfo {
+      padding: 14px 0;
+     
+      @include breakpoint(sm) {
+        font-size: 14px;
+      }
+    }
+
+    &_date {
+      background-color: $gray-200;
+      padding: 2px;
+      margin: 8px 0 12px 0;
+      width: fit-content;
+
+      @include breakpoint(sm) {
+        font-size: 14px;
+      }
+    }
+
+    &_org {
+      font-style: italic;
+      margin-bottom: 8px;
+
+      @include breakpoint(sm) {
+        font-size: 14px;
+      }
+    }
+  
+    &_detail {
+      align-items: center;
+      display: flex;
+      margin-bottom: 12px;
+  
+      &_icon {
+        color: $green-100;
+        font-size: 36px;
+      }
+  
+      &_text {
+        @include breakpoint(sm) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
