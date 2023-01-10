@@ -45,8 +45,7 @@ const Hero = () => {
           <Text
             type={(() => {
               if (isSmallDesktop || isTablet) return textTypes.BODY.LG;
-              else if (isSmallMobile) return textTypes.BODY.XS;
-              else if (isMobile) return textTypes.BODY.MD;
+              else if (isMobile || isSmallMobile) return textTypes.BODY.SM;
               return textTypes.BODY.XL;
             })()}
           >
