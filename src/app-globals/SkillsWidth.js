@@ -1,0 +1,16 @@
+const SKILL_WIDTH = {
+  FORTY: "40",
+  FIFTY: "50",
+  FIFTY_FIVE: "55",
+  SIXTY: "60",
+  SIXTY_FIVE: "65",
+  SEVENTY: "70",
+  SEVENTY_FIVE: "75",
+  EIGHTY: "80",
+  EIGHTY_FIVE: "85",
+  NINETY: "90",
+  NINETY_FIVE: "95",
+  HUNDERED: "100",
+};
+
+export default SKILL_WIDTH;
