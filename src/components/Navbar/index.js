@@ -7,7 +7,7 @@ import GLOBALS from "app-globals";
 import { Container, Icon, Text } from "elements";
 import { textTypes } from "elements/constants";
 
-import Logo from "../../static/images/sample.svg";
+import LogoName from "../../static/images/profiles/logo-name.png";
 
 import styles from "./styles.module.scss";
 
@@ -48,18 +48,11 @@ const Navbar = () => {
             duration={700}
           >
             <img
-              src={Logo}
+              src={LogoName}
               className={styles.Navbar_logo_img}
-              alt="Sinoy Logo"
-              width={40}
+              alt="Logo"
               height={40}
             />
-            <Text
-              colorClass={GLOBALS.COLOR_CLASSES.GREEN["100"]}
-              type={textTypes.HEADING.MD}
-            >
-              Logo
-            </Text>
           </Link>
 
           {/* Desktop */}

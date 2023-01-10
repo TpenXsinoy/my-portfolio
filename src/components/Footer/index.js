@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-import GLOBALS from "app-globals";
-
+import { useWindowSize } from "hooks";
 import { Container, Text, Section } from "elements";
-import { textTypes } from "elements/constants";
 import { SocialIcon } from "react-social-icons";
 
-import Logo from "../../static/images/sample.svg";
+import Logo from "../../static/images/profiles/logo.png";
+import LogoName from "../../static/images/profiles/logo-name.png";
 import ph from "../../static/images/profiles/ph.png";
+
 import styles from "./styles.module.scss";
 
 const Footer = () => {
+  const { isSmallMobile, isMobile } = useWindowSize();
   return (
     <footer>
       <Section className={styles.Footer}>
@@ -23,25 +24,27 @@ const Footer = () => {
             offset={-200}
             duration={700}
           >
-            <img
-              src={Logo}
-              className={styles.Footer_logo_img}
-              alt="Sinoy Logo"
-              width={40}
-              height={40}
-            />
-            <Text
-              colorClass={GLOBALS.COLOR_CLASSES.GREEN["100"]}
-              type={textTypes.HEADING.MD}
-            >
-              Logo
-            </Text>
+            {isMobile || isSmallMobile ? (
+              <img
+                src={Logo}
+                className={styles.Footer_logo_img}
+                alt="Logo"
+                height={40}
+              />
+            ) : (
+              <img
+                src={LogoName}
+                className={styles.Footer_logo_img}
+                alt="Logo"
+                height={40}
+              />
+            )}
           </Link>
 
           <div className={styles.Footer_info}>
             <div className={styles.Footer_info_socials}>
               <SocialIcon
-                url="https://www.facebook.com/ako.stephine"
+                url="https://www.linkedin.com/in/stephine-sinoy-a786a2221/"
                 className={styles.Footer_info_socials_icon}
                 bgColor="white"
               />
