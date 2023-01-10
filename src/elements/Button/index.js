@@ -71,6 +71,7 @@ Button.propTypes = {
   type: PropTypes.oneOf([
     buttonTypes.PRIMARY.GREEN,
     buttonTypes.PRIMARY.GRAY,
+    buttonTypes.SECONDARY.GREEN,
     buttonTypes.TEXT.GREEN,
     buttonTypes.TEXT.WHITE,
     buttonTypes.TEXT.BLACK,

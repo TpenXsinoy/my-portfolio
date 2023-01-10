@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Section } from "elements";
 
 import styles from "./styles.module.scss";
-import { ContactCard } from "components";
+import { ContactCard, SectionHeader } from "components";
 
 const ContactInfo = [
   {
@@ -33,8 +33,9 @@ const ContactInfo = [
 ];
 
 const Contact = () => (
-  <Section className={styles.Contact} title="CONTACT" id="contact">
+  <Section className={styles.Contact}>
     <Container className={styles.Contact_container}>
+      <SectionHeader title="CONTACT" id="contact" />
       <div className={styles.Contact_details}>
         {ContactInfo.map((info) => (
           <ContactCard
