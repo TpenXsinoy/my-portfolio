@@ -1,0 +1,158 @@
+@use '../../styles' as *;
+
+.About {
+  &_content {
+    display: flex;
+    margin: 56px 0 40px 0;
+
+    @include breakpoint(md) {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 24px;
+    }
+
+    &_image {
+      text-align: center;
+      > img {
+        @include breakpoint(lg) {
+          width: 350px;
+        }
+
+        @include breakpoint(md) {
+          width: 70%;
+        }
+      }
+    
+    }
+
+    &_info {
+      @include breakpoint(md) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &_title {
+        display: grid;
+        gap: 16px;
+
+        @include breakpoint(md) {
+          margin-top: 24px;
+          text-align: center;
+        }
+      }
+
+      &_subInfo {
+        @include breakpoint(sm) {
+          font-size: 14px ;
+        }
+      }
+
+      &_personalInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 36px 0;
+        row-gap: 16px;
+        
+        @include breakpoint(sm) {
+          grid-template-columns: 1fr;
+          padding: 24px 0;
+        }
+        
+        &_detail {
+         @include flex-start;
+
+         &_name {
+          margin-right: 8px;
+         }
+        }
+      }
+
+      &_summary {
+        text-align: justify;
+
+        @include breakpoint(md) {
+          text-align: center;
+        }
+
+        @include breakpoint(sm) {
+          font-size: 14px ;
+        }
+      }
+    }
+
+    &_icon {
+      color: $green-100;
+      font-size: 36px;
+    }
+  }
+
+  &_skills {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    row-gap: 24px;
+
+    @include breakpoint(md) {
+      grid-template-columns: 1fr;
+    }
+
+    @include breakpoint(sm) {
+      margin-top: 20px;
+      row-gap: 16px;
+    }
+  }
+
+  &___40 {
+    width: 40%;
+  }
+
+  &___45 {
+    width: 45%;
+  }
+
+  &___50 {
+    width: 50%;
+  }
+
+  &___55 {
+    width: 55%;
+  }
+
+  &___60 {
+    width: 60%;
+  }
+
+  &___65 {
+    width: 65%;
+  }
+
+  &___70 {
+    width: 70%;
+  }
+
+  &___75 {
+    width: 75%;
+  }
+
+  &___80 {
+    width: 80%;
+  }
+
+  &___85 {
+    width: 85%;
+  }
+
+  &___90 {
+    width: 90%;
+  }
+
+  &___95 {
+    width: 95%;
+  }
+
+  &___100 {
+    width: 100%;
+  }
+}
