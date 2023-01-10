@@ -4,10 +4,10 @@ import GLOBALS from "app-globals";
 
 import { useWindowSize } from "hooks";
 import { Container, Icon, Section, Text } from "elements";
-import { SkillList } from "components";
+import { SkillList, SectionHeader } from "components";
 import { textTypes } from "elements/constants";
 
-import SideProfile from "../../static/images/side-profile.webp";
+import SideProfile from "../../static/images/profiles/side-profile.webp";
 
 import styles from "./styles.module.scss";
 
@@ -70,12 +70,16 @@ const About = () => {
   const { isSmallMobile, isMobile, isTablet, isSmallDesktop } = useWindowSize();
   return (
     <Section
-      title="ABOUT ME"
-      subInfo={GLOBALS.SUB_INFO.ABOUT}
+      // title="ABOUT ME"
+      // subInfo={GLOBALS.SUB_INFO.ABOUT}
       className={styles.About}
-      id="about"
     >
       <Container className={styles.About_container}>
+        <SectionHeader
+          title="ABOUT ME"
+          subInfo={GLOBALS.SUB_INFO.ABOUT}
+          id="about"
+        />
         <div className={styles.About_content}>
           <div className={styles.About_content_image}>
             <img src={SideProfile} alt="Profile" />
