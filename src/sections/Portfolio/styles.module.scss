@@ -1,0 +1,30 @@
+@use '../../styles' as *;
+
+.Portfolio {
+  &_projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+    margin-top: 40px;
+
+    > div {
+      &:nth-of-type(4){
+        grid-column-end: 3;
+      }
+    }
+
+    @include breakpoint(md) {
+      grid-template-columns: 1fr 1fr;
+
+      > div {
+        &:nth-of-type(4){
+          grid-column-end: unset;
+        }
+      }
+    }
+
+    @include breakpoint(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
