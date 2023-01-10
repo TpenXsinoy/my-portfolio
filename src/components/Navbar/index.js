@@ -25,7 +25,7 @@ const LINKS = [
     name: "Resume",
   },
   {
-    id: "portoflio",
+    id: "portfolio",
     name: "Portfolio",
   },
   {

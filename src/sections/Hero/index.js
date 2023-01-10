@@ -8,7 +8,7 @@ import { SocialIcon } from "react-social-icons";
 
 import { useWindowSize } from "hooks";
 
-import Profile from "../../static/images/profile-pic.webp";
+import Profile from "../../static/images/profiles/profile-pic.webp";
 
 import styles from "./styles.module.scss";
 

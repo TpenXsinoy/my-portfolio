@@ -8,7 +8,7 @@ import { textTypes } from "elements/constants";
 import { SocialIcon } from "react-social-icons";
 
 import Logo from "../../static/images/sample.svg";
-import ph from "../../static/images/ph.png";
+import ph from "../../static/images/profiles/ph.png";
 import styles from "./styles.module.scss";
 
 const Footer = () => {
