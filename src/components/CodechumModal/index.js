@@ -22,6 +22,7 @@ import image12 from "../../static/images/projects/image12.webp";
 import image13 from "../../static/images/projects/image13.webp";
 
 import styles from "./styles.module.scss";
+import GLOBALS from "app-globals";
 
 const CodechumModal = ({ isOpen, onClose }) => {
   const sliderSettings = {
@@ -51,7 +52,11 @@ const CodechumModal = ({ isOpen, onClose }) => {
   return (
     <Modal className={styles.Modal} isOpen={isOpen} handleClose={onClose}>
       <div className={styles.Modal_header}>
-        <Text className={styles.Modal_heading} type={textTypes.HEADING.LG}>
+        <Text
+          className={styles.Modal_heading}
+          colorClass={GLOBALS.COLOR_CLASSES.GREEN["100"]}
+          type={textTypes.HEADING.LG}
+        >
           Codechum Landing Page
         </Text>
         <Text className={styles.Modal_heading_helper}>
