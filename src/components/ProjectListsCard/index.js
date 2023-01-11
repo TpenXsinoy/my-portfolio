@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import GLOBALS from "app-globals";
 
-import CodechumModal from "components/CodechumModal";
+// import CodechumModal from "components/CodechumModal";
 import { ButtonLink, Card, Modal, Text } from "elements";
 import { buttonTypes, textTypes } from "elements/constants";
 
