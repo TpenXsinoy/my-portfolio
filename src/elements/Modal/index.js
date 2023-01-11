@@ -32,6 +32,7 @@ const Modal = ({ className, children, handleClose, isOpen }) => (
     {children}
   </ReactModal>
 );
+ReactModal.setAppElement(document.getElementById("root"));
 
 Modal.propTypes = {
   className: PropTypes.string,
