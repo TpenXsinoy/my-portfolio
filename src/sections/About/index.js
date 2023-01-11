@@ -105,9 +105,9 @@ const About = () => {
               </Text>
 
               <Text className={styles.About_content_info_subInfo}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas similique accusantium nemo autem.
-                Veritatis
+                Highly motivated and skilled web developer. Excellent
+                problem-solving skills and ability to work well in a team
+                environment.
               </Text>
             </div>
 
@@ -135,11 +135,12 @@ const About = () => {
             </div>
 
             <Text className={styles.About_content_info_summary}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-              voluptatum laborumnnumquam blanditiis harum quisquam eius sed odit
-              fugiat iusto fuga praesentium optio, eaque rerum! Provident
-              similique accusantium nemo autem. Veritatis
+              I have a strong understanding of the basics of web development
+              principles. Familiar with{" "}
+              <span className={styles.About_span}>
+                JavaScript, React, C#, Java, ASP.NET CORE
+              </span>{" "}
+              and always looking to expand my knowledge and skills in the field.
             </Text>
           </div>
         </div>
