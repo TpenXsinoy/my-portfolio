@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import GLOBALS from "app-globals";
 
 import CodechumModal from "components/CodechumModal";
-import { ButtonLink, Card, Text } from "elements";
+import { ButtonLink, Card, Modal, Text } from "elements";
 import { buttonTypes, textTypes } from "elements/constants";
 
 import styles from "./styles.module.scss";
@@ -14,9 +14,13 @@ const ProjectListsCard = ({ image, name, detail, link }) => {
   const [isCodechumModalOpen, setIsCodechumModalOpen] = useState(false);
   return (
     <>
-      <CodechumModal
+      {/* <CodechumModal
         isOpen={isCodechumModalOpen}
         onClose={() => setIsCodechumModalOpen(false)}
+      /> */}
+      <Modal
+        isOpen={isCodechumModalOpen}
+        handleClose={() => setIsCodechumModalOpen(false)}
       />
       <Card className={styles.ProjectListsCard}>
         <img className={styles.ProjectListsCard_image} src={image} alt={name} />
