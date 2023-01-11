@@ -6,6 +6,21 @@
   @include breakpoint(md) {
     height: 100vh;
     @include flex-center;
+
+    &::before {
+      background: url('../../static/images/profiles/profile-pic.webp');
+      background-repeat: no-repeat;
+      background-size: 320px 550px;
+      bottom: 0;
+      content: '';
+      left: 35%;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      z-index: -1;
+      opacity: 0.3;
+     
+    }
   }
 
   &_container {
