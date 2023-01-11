@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 import cn from "classnames";
@@ -35,10 +35,23 @@ const LINKS = [
 ];
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      setIsScrolled(window.pageYOffset !== 0);
+    });
+  }, []);
+
   return (
     <>
-      <nav className={styles.Navbar}>
+      <nav
+        className={[
+          styles.Navbar,
+          isScrolled ? styles.Navbar___scrolled : "",
+        ].join(" ")}
+      >
         <Container className={styles.Navbar_container}>
           <Link
             className={styles.Navbar_logo}

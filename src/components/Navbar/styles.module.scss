@@ -1,7 +1,7 @@
 @use '../../styles' as *;
 
 .Navbar {
-  background: $black-500;
+  background: $blue-400;
   left: 0;
   padding: 5px 0 10px;
   position: fixed;
@@ -10,6 +10,10 @@
   right: 0;
   z-index: 1;
   @include flex-center;
+
+  &___scrolled {
+    background: $black-500;
+  }
 
   &_container {
     @include flex-between;
