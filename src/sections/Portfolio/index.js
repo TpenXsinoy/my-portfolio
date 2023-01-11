@@ -18,29 +18,29 @@ const Projects = [
     image: Xmuse,
     name: "XMuse",
     detail:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint",
-    link: "/",
+      "This project helped me enhance my JavaScript skills and in layouting the elements",
+    link: "https://tpenxsinoy.github.io/xmuse/",
   },
   {
     image: Codechum,
     name: "Codechum Landing Page",
     detail:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint",
+      "Doing this project allowed me to gain hands-on experience with managing different states, and deepened my ability in utilizing REACT in building responsive and user-friendly web applications",
     link: null,
   },
   {
     image: Alivee,
     name: "Alivee",
     detail:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint",
-    link: "/",
+      "This is project improved my skills on layouting and visualizing the arrangement of the elements in a website",
+    link: "https://tpenxsinoy.github.io/alivee/",
   },
   {
     image: Todo,
     name: "Todo App",
     detail:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint",
-    link: "/",
+      "This project allowed me to understand dom manipulation and local storage management better",
+    link: "https://tpenxsinoy.github.io/ToDo-App/",
   },
 ];
 
