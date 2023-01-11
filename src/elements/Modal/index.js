@@ -15,7 +15,6 @@ const Modal = ({ className, children, handleClose, isOpen }) => (
     onRequestClose={handleClose}
     overlayClassName={styles.Modal_overlay}
     contentLabel="Modal"
-    ariaHideApp
     shouldFocusAfterRender
     shouldCloseOnOverlayClick
     shouldCloseOnEsc
