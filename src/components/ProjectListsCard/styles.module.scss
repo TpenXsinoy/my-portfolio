@@ -20,11 +20,12 @@
   }
 
   &_detail {
+    margin-bottom: 40px;
     @include breakpoint(xs) {
       font-size: 14px;
     }
   }
   &_button {
-    margin-top: 48px;
+    margin-top: auto;
   }
 }
