@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import GLOBALS from "app-globals";
 
 import CodechumModal from "components/CodechumModal";
-import { ButtonLink, Card, Text } from "elements";
+import { Button, ButtonLink, Card, Text } from "elements";
 import { buttonTypes, textTypes } from "elements/constants";
 
 import styles from "./styles.module.scss";
@@ -29,16 +29,25 @@ const ProjectListsCard = ({ image, name, detail, link }) => {
           {name}
         </Text>
         <Text className={styles.ProjectListsCard_detail}>{detail}</Text>
-        <ButtonLink
-          to={link ? link : ""}
-          className={styles.ProjectListsCard_button}
-          type={buttonTypes.SECONDARY.GREEN}
-          onClick={() => {
-            !link && setIsCodechumModalOpen(true);
-          }}
-        >
-          <Text type={textTypes.HEADING.XXXS}>Checkout Website</Text>
-        </ButtonLink>
+        {link ? (
+          <ButtonLink
+            to={link}
+            className={styles.ProjectListsCard_button}
+            type={buttonTypes.SECONDARY.GREEN}
+          >
+            <Text type={textTypes.HEADING.XXXS}>Checkout Website</Text>
+          </ButtonLink>
+        ) : (
+          <Button
+            className={styles.ProjectListsCard_button}
+            type={buttonTypes.SECONDARY.GREEN}
+            onClick={() => {
+              setIsCodechumModalOpen(true);
+            }}
+          >
+            <Text type={textTypes.HEADING.XXXS}>Checkout Website</Text>
+          </Button>
+        )}
       </Card>
     </>
   );
