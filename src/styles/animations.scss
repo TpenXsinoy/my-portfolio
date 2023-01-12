@@ -19,6 +19,15 @@
   }
 }
 
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
 @keyframes slideLefttFade {
   0% {
     opacity: 0;
