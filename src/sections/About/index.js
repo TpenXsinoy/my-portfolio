@@ -1,7 +1,10 @@
 import React from "react";
 
+import cn from "classnames";
+
 import GLOBALS from "app-globals";
 
+import { useInView } from "react-intersection-observer";
 import { useWindowSize } from "hooks";
 import { Container, Icon, Section, Text } from "elements";
 import { SkillList, SectionHeader } from "components";
@@ -67,8 +70,15 @@ const Skills = [
 ];
 
 const About = () => {
+  const { ref: contentRef, inView: isContentVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: skillsRef, inView: isSkillsVisible } = useInView({
+    triggerOnce: true,
+  });
   const { isSmallMobile, isMobile, isTablet, isSmallDesktop, isDesktop } =
     useWindowSize();
+
   return (
     <Section
       className={styles.About}
@@ -85,12 +95,22 @@ const About = () => {
           subInfo={GLOBALS.SUB_INFO.ABOUT}
           id="about"
         />
-        <div className={styles.About_content}>
-          <div className={styles.About_content_image}>
+        <div className={styles.About_content} ref={contentRef}>
+          <div
+            className={cn(
+              styles.About_content_image,
+              isContentVisible && styles.About___animateImage
+            )}
+          >
             <img src={SideProfile} alt="Profile" />
           </div>
 
-          <div className={styles.About_content_info}>
+          <div
+            className={cn(
+              styles.About_content_info,
+              isContentVisible && styles.About___animateInfo
+            )}
+          >
             <div className={styles.About_content_info_title}>
               <Text
                 colorClass={GLOBALS.COLOR_CLASSES.GREEN["100"]}
@@ -148,9 +168,10 @@ const About = () => {
         <Text type={isMobile ? textTypes.HEADING.LG : textTypes.HEADING.XL}>
           SKILLS
         </Text>
-        <div className={styles.About_skills}>
+        <div ref={skillsRef} className={styles.About_skills}>
           {Skills.map((skill) => (
             <SkillList
+              isVisible={isSkillsVisible}
               title={skill.name}
               percent={skill.percent}
               key={skill.name}

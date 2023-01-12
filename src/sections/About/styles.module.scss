@@ -22,7 +22,6 @@
           width: 70%;
         }
       }
-    
     }
 
     &_info {
@@ -109,55 +108,11 @@
     font-weight: 700;
   }
 
-  &___40 {
-    width: 40%;
+  &___animateImage {
+    animation: slideRightFade 1s ease-in-out;
   }
 
-  &___45 {
-    width: 45%;
-  }
-
-  &___50 {
-    width: 50%;
-  }
-
-  &___55 {
-    width: 55%;
-  }
-
-  &___60 {
-    width: 60%;
-  }
-
-  &___65 {
-    width: 65%;
-  }
-
-  &___70 {
-    width: 70%;
-  }
-
-  &___75 {
-    width: 75%;
-  }
-
-  &___80 {
-    width: 80%;
-  }
-
-  &___85 {
-    width: 85%;
-  }
-
-  &___90 {
-    width: 90%;
-  }
-
-  &___95 {
-    width: 95%;
-  }
-
-  &___100 {
-    width: 100%;
+  &___animateInfo {
+    animation: slideLefttFade 1s ease-in-out;
   }
 }
