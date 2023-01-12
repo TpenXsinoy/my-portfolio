@@ -1,7 +1,10 @@
 import React from "react";
 
+import cn from "classnames";
+
 import GLOBALS from "app-globals";
 
+import { useInView } from "react-intersection-observer";
 import { useWindowSize } from "hooks";
 import { ResumeInfo, SectionHeader } from "components";
 import { Container, Section } from "elements";
@@ -87,6 +90,10 @@ const Information = [
 ];
 
 const Resume = () => {
+  const { ref: myRef, inView: isResumeVisible } = useInView({
+    triggerOnce: true,
+  });
+
   const { isSmallDesktop, isDesktop } = useWindowSize();
   return (
     <Section
@@ -98,13 +105,25 @@ const Resume = () => {
         return "resume";
       })()}
     >
-      <Container className={styles.Resume_container}>
+      <Container
+        className={cn(
+          styles.Resume_container,
+          isResumeVisible && styles.Resume___animate
+        )}
+        ref={myRef}
+      >
         <SectionHeader
           title="RESUME"
           subInfo={GLOBALS.SUB_INFO.RESUME}
           id="resume"
         />
-        <div className={styles.Resume_information}>
+
+        <div
+          className={cn(
+            styles.Resume_information,
+            isResumeVisible && styles.Resume___animateDivs
+          )}
+        >
           {Information.map((info) => (
             <ResumeInfo
               title={info.title}
