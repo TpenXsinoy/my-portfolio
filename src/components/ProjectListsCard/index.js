@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import cn from "classnames";
 import PropTypes from "prop-types";
 
 import GLOBALS from "app-globals";
@@ -10,7 +11,7 @@ import { buttonTypes, textTypes } from "elements/constants";
 
 import styles from "./styles.module.scss";
 
-const ProjectListsCard = ({ image, name, detail, link }) => {
+const ProjectListsCard = ({ image, name, detail, link, tools }) => {
   const [isCodechumModalOpen, setIsCodechumModalOpen] = useState(false);
   return (
     <>
@@ -28,7 +29,25 @@ const ProjectListsCard = ({ image, name, detail, link }) => {
         >
           {name}
         </Text>
+
         <Text className={styles.ProjectListsCard_detail}>{detail}</Text>
+
+        {tools && (
+          <div className={styles.ProjectListsCard_tools}>
+            {tools.map((tool) => (
+              <div
+                className={cn(
+                  styles.ProjectListsCard_tools_tool,
+                  styles[`ProjectListsCard___${tool}`]
+                )}
+                key={tool}
+              >
+                {tool}
+              </div>
+            ))}
+          </div>
+        )}
+
         {link ? (
           <ButtonLink
             to={link}
@@ -55,6 +74,7 @@ const ProjectListsCard = ({ image, name, detail, link }) => {
 
 ProjectListsCard.defaultProps = {
   link: null,
+  tools: null,
 };
 
 ProjectListsCard.propTypes = {
@@ -62,6 +82,7 @@ ProjectListsCard.propTypes = {
   name: PropTypes.string.isRequired,
   detail: PropTypes.string.isRequired,
   link: PropTypes.string,
+  tools: PropTypes.array,
 };
 
 export default ProjectListsCard;
