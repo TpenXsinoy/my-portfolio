@@ -12,7 +12,7 @@ const ContactInfo = [
   {
     icon: "location_on",
     name: "My Address",
-    detail: "Leo’s Ville, Sitio Letmon, Brgy. Dumlog, Taslisay City, Cebu",
+    detail: "Dumlog, Taslisay City, Cebu",
     hasSocials: false,
   },
   {
