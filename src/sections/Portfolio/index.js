@@ -1,7 +1,10 @@
 import React from "react";
 
+import cn from "classnames";
+
 import GLOBALS from "app-globals";
 
+import { useInView } from "react-intersection-observer";
 import { useWindowSize } from "hooks";
 import { ProjectListsCard, SectionHeader } from "components";
 import { Container, Section } from "elements";
@@ -45,6 +48,9 @@ const Projects = [
 ];
 
 const Portfolio = () => {
+  const { ref: portfolioRef, inView: isPortfolioVisible } = useInView({
+    triggerOnce: true,
+  });
   const { isSmallDesktop, isDesktop } = useWindowSize();
   return (
     <Section
@@ -56,13 +62,18 @@ const Portfolio = () => {
         return "portfolio";
       })()}
     >
-      <Container className={styles.Portfolio_container}>
+      <Container className={styles.Portfolio_container} ref={portfolioRef}>
         <SectionHeader
           title="PORTFOLIO"
           subInfo={GLOBALS.SUB_INFO.PORTFOLIO}
           id="portfolio"
         />
-        <div className={styles.Portfolio_projects}>
+        <div
+          className={cn(
+            styles.Portfolio_projects,
+            isPortfolioVisible && styles.Portfolio___animate
+          )}
+        >
           {Projects.map((project) => (
             <ProjectListsCard
               image={project.image}

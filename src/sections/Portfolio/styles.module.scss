@@ -27,4 +27,25 @@
       grid-template-columns: 1fr;
     }
   }
+
+  &___animate {
+    > div {
+      &:nth-of-type(1){
+        animation: zoomIn 0.5s ease-in-out;
+      }
+
+      &:nth-of-type(2){
+        animation: zoomIn 1s ease-in-out;
+      }
+
+      &:nth-of-type(3){
+        animation: zoomIn 1.5s ease-in-out;
+      }
+
+      &:nth-of-type(4){
+        animation: zoomIn 2s ease-in-out;
+      }
+    }
+   
+  }
 }
