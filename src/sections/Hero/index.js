@@ -31,6 +31,7 @@ const Hero = () => {
           </Text>
 
           <Text
+            className={styles.Hero_details_name}
             colorClass={GLOBALS.COLOR_CLASSES.GREEN["100"]}
             type={(() => {
               if (isSmallDesktop || isTablet) return textTypes.HEADING.XXXXXL;

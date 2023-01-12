@@ -29,10 +29,21 @@
   }
 
   &_details {
+    animation: slideRightFade 0.5s ease-in-out;
+
     @include breakpoint(md) {
       display: grid;
       gap: 8px;
       text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    &_name {
+      overflow: hidden; 
+      border-right: 4px solid $green-100; 
+      white-space: nowrap;
+      margin: 0 auto; 
+      animation: typing 2s steps(40, end), blinkCaret .75s step-end infinite;
     }
 
     &_span {
@@ -77,6 +88,8 @@
         }
 
         &:hover {
+          animation: bounce 1s ease-in-out;
+
           >div {
             >svg {
               >g {
@@ -92,6 +105,8 @@
   }
 
   &_image {
+    animation: slideLefttFade 0.5s ease-in-out;
+
     @include breakpoint(md) {
       display: none;
     }
