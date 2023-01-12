@@ -8,11 +8,12 @@ import { textTypes } from "elements/constants";
 
 import styles from "./styles.module.scss";
 
-const SectionHeader = ({ title, subInfo, id }) => {
+const SectionHeader = React.forwardRef(({ title, subInfo, id }, ref) => {
   const { isSmallMobile, isMobile, isTablet, isSmallDesktop, isDesktop } =
     useWindowSize();
   return (
     <div
+      ref={ref}
       className={styles.SectionHeader}
       id={(() => {
         if (isSmallDesktop || isDesktop) {
@@ -46,7 +47,9 @@ const SectionHeader = ({ title, subInfo, id }) => {
       )}
     </div>
   );
-};
+});
+
+SectionHeader.displayName = "SectionHeader";
 
 SectionHeader.propTypes = {
   id: PropTypes.string,

@@ -8,7 +8,7 @@ import { textTypes } from "elements/constants";
 
 import styles from "./styles.module.scss";
 
-const SkillList = ({ title, percent }) => (
+const SkillList = ({ title, percent, isVisible }) => (
   <div className={styles.SkillList}>
     <Text type={textTypes.BODY.LG}>{title}</Text>
     <div className={styles.SkillList_container}>
@@ -16,7 +16,7 @@ const SkillList = ({ title, percent }) => (
         <span
           className={cn(
             styles.SkillList_progressBar,
-            styles[`SkillList___${percent}`]
+            isVisible && styles[`SkillList___${percent}`]
           )}
         ></span>
       </div>
@@ -26,9 +26,14 @@ const SkillList = ({ title, percent }) => (
   </div>
 );
 
+SkillList.defaultProps = {
+  isVisible: false,
+};
+
 SkillList.propTypes = {
   title: PropTypes.string.isRequired,
   percent: PropTypes.string.isRequired,
+  isVisible: PropTypes.bool,
 };
 
 export default SkillList;
