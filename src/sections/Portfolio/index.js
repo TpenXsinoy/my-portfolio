@@ -23,13 +23,15 @@ const Projects = [
     detail:
       "This project helped me enhance my JavaScript skills and in layouting the elements",
     link: "https://tpenxsinoy.github.io/xmuse/",
+    tools: ["HTML", "CSS", "JAVASCRIPT"],
   },
   {
     image: Codechum,
     name: "Codechum Landing Page",
     detail:
-      "Doing this project allowed me to gain hands-on experience with managing different states, and deepened my ability in utilizing REACT in building responsive and user-friendly web applications",
+      "Doing this project deepened my ability in utilizing REACT in building responsive and user-friendly web applications",
     link: null,
+    tools: ["REACT", "SASS"],
   },
   {
     image: Alivee,
@@ -37,6 +39,7 @@ const Projects = [
     detail:
       "This is project improved my skills on layouting and visualizing the arrangement of the elements in a website",
     link: "https://tpenxsinoy.github.io/alivee/",
+    tools: ["HTML", "CSS"],
   },
   {
     image: Todo,
@@ -44,6 +47,7 @@ const Projects = [
     detail:
       "This project allowed me to understand dom manipulation and local storage management better",
     link: "https://tpenxsinoy.github.io/ToDo-App/",
+    tools: ["HTML", "CSS", "JAVASCRIPT"],
   },
 ];
 
@@ -80,6 +84,7 @@ const Portfolio = () => {
               name={project.name}
               detail={project.detail}
               link={project.link}
+              tools={project.tools}
               key={project.name}
             />
           ))}
