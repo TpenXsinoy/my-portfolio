@@ -8,6 +8,7 @@
     @include flex-center;
 
     &::before {
+      animation: fadeIn2 1s ease-in-out;
       background: url('../../static/images/profiles/profile-pic.webp');
       background-repeat: no-repeat;
       background-size: cover;
@@ -19,7 +20,6 @@
       top: 50px;
       z-index: -1;
       opacity: 0.3;
-     
     }
   }
 
