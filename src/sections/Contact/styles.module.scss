@@ -15,4 +15,8 @@
       gap: 24px;
     }
   }
+
+  &___animate {
+    animation: fadeIn 1s ease-in-out;
+  }
 }
