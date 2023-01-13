@@ -2,11 +2,10 @@ import React from "react";
 
 import GLOBALS from "app-globals";
 
+import { useWindowSize } from "hooks";
 import { Container, Section, Text } from "elements";
 import { textTypes } from "elements/constants";
 import { SocialIcon } from "react-social-icons";
-
-import { useWindowSize } from "hooks";
 
 import Profile from "../../static/images/profiles/profile-pic.webp";
 

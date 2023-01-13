@@ -32,7 +32,7 @@ SkillList.defaultProps = {
 
 SkillList.propTypes = {
   title: PropTypes.string.isRequired,
-  percent: PropTypes.string.isRequired,
+  percent: PropTypes.number.isRequired,
   isVisible: PropTypes.bool,
 };
 

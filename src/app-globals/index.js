@@ -5,7 +5,6 @@ import COLOR_NAMES from "./colorNames";
 import FONT_SIZES from "./fontSizes";
 import FONT_WEIGHTS from "./fontWeights";
 import PROJECT_TYPES from "./projectTypes";
-import SKILL_WIDTH from "./skillsWidth";
 import SUB_INFO from "./sectionSubinfo";
 import WINDOW_SIZES from "./windowSizes";
 
@@ -17,7 +16,6 @@ const GLOBALS = {
   FONT_SIZES,
   FONT_WEIGHTS,
   PROJECT_TYPES,
-  SKILL_WIDTH,
   SUB_INFO,
   WINDOW_SIZES,
 };
