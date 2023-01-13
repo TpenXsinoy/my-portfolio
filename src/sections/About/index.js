@@ -9,65 +9,11 @@ import { useWindowSize } from "hooks";
 import { Container, Icon, Section, Text } from "elements";
 import { SkillList, SectionHeader } from "components";
 import { textTypes } from "elements/constants";
+import { skills, details } from "./constants";
 
 import SideProfile from "../../static/images/profiles/side-profile.webp";
 
 import styles from "./styles.module.scss";
-
-const Details = [
-  {
-    name: "Birthday:",
-    info: "31 May 2001",
-  },
-  {
-    name: "Phone:",
-    info: "+63 906 0264 692",
-  },
-  {
-    name: "Course:",
-    info: "BS Computer Science",
-  },
-  {
-    name: "Age:",
-    info: "21",
-  },
-  {
-    name: "City:",
-    info: "Talisay City, Cebu",
-  },
-  {
-    name: "Email:",
-    info: "stephine.n.sinoy@gmail.com",
-  },
-];
-
-const Skills = [
-  {
-    name: "HTML",
-    percent: GLOBALS.SKILL_WIDTH.NINETY_FIVE,
-  },
-
-  {
-    name: "CSS",
-    percent: GLOBALS.SKILL_WIDTH.EIGHTY_FIVE,
-  },
-  {
-    name: "JAVASCRIPT",
-    percent: GLOBALS.SKILL_WIDTH.SIXTY_FIVE,
-  },
-  {
-    name: "REACT",
-    percent: GLOBALS.SKILL_WIDTH.SIXTY,
-  },
-  {
-    name: "C#",
-    percent: GLOBALS.SKILL_WIDTH.FORTY,
-  },
-  {
-    name: "JAVA",
-    percent: GLOBALS.SKILL_WIDTH.SIXTY_FIVE,
-  },
-];
 
 const About = () => {
   const { ref: contentRef, inView: isContentVisible } = useInView({
@@ -132,7 +78,7 @@ const About = () => {
             </div>
 
             <div className={styles.About_content_info_personalInfo}>
-              {Details.map((detail) => (
+              {details.map((detail) => (
                 <div
                   key={detail.name}
                   className={styles.About_content_info_personalInfo_detail}
@@ -169,7 +115,7 @@ const About = () => {
           SKILLS
         </Text>
         <div ref={skillsRef} className={styles.About_skills}>
-          {Skills.map((skill) => (
+          {skills.map((skill) => (
             <SkillList
               isVisible={isSkillsVisible}
               title={skill.name}
