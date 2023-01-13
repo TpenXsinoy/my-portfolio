@@ -5,35 +5,9 @@ import cn from "classnames";
 import { useInView } from "react-intersection-observer";
 import { Container, Section } from "elements";
 import { ContactCard, SectionHeader } from "components";
+import contactInfo from "./constants/contactInfo";
 
 import styles from "./styles.module.scss";
-
-const ContactInfo = [
-  {
-    icon: "location_on",
-    name: "My Address",
-    detail: "Dumlog, Taslisay City, Cebu",
-    hasSocials: false,
-  },
-  {
-    icon: "share",
-    name: "Social Profiles",
-    detail: null,
-    hasSocials: true,
-  },
-  {
-    icon: "email",
-    name: "Email Me",
-    detail: "stephine.n.sinoy@gmail.com",
-    hasSocials: false,
-  },
-  {
-    icon: "call",
-    name: "Call Me",
-    detail: "+63 906 0264 692",
-    hasSocials: false,
-  },
-];
 
 const Contact = () => {
   const { ref: contactRef, inView: isContactVisible } = useInView({
@@ -49,7 +23,7 @@ const Contact = () => {
             isContactVisible && styles.Contact___animate
           )}
         >
-          {ContactInfo.map((info) => (
+          {contactInfo.map((info) => (
             <ContactCard
               icon={info.icon}
               name={info.name}
