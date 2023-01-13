@@ -1,0 +1,73 @@
+@use '../../styles' as *;
+
+.ProjectTab {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+
+  &_button {
+    background: $blue-400;
+    border: 1px solid $green-100;
+    color: $neutral-0;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 16px 80px;
+    position: relative;
+    transition: 0.2s ease;
+
+    @include breakpoint(md) {
+      padding: 18px 64px;
+      font-size: 0.875rem;
+    }
+
+    @include breakpoint(sm) {
+      padding: 18px 40px;
+      font-size: 16px;
+    }
+
+    &:hover {
+      background: $gray-200;
+    }
+
+    &:first-of-type {
+      border-radius: 16px 0 0 16px;
+    }
+
+    &:nth-of-type(2) {
+      border-radius: 0;
+    }
+
+    &:last-of-type {
+      border-radius: 0 16px 16px 0;
+    }
+
+    &___active {
+      background: $green-100;
+      color: $blue-400;
+
+      &:hover {
+        background: $neutral-100;
+      }
+    }
+
+    &___optional {
+      &::after {
+        align-items: center;
+        background: #FFA500;
+        border-radius: 16px;
+        color: $neutral-0;
+        content: 'OPTIONAL';
+        display: flex;
+        font-family: Inter, sans-serif;
+        font-size: 0.75rem;
+        justify-content: center;
+        padding: 4px 8px;
+        position: absolute;
+        right: -24px;
+        top: -12px;
+      }
+    }
+  }
+}
