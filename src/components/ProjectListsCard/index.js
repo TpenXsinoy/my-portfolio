@@ -38,11 +38,11 @@ const ProjectListsCard = ({ image, name, detail, link, tools }) => {
               <div
                 className={cn(
                   styles.ProjectListsCard_tools_tool,
-                  styles[`ProjectListsCard___${tool}`]
+                  styles[`ProjectListsCard___${tool.color}`]
                 )}
-                key={tool}
+                key={tool.name}
               >
-                <Text>{tool}</Text>
+                <Text>{tool.name}</Text>
               </div>
             ))}
           </div>
@@ -82,7 +82,12 @@ ProjectListsCard.propTypes = {
   name: PropTypes.string.isRequired,
   detail: PropTypes.string.isRequired,
   link: PropTypes.string,
-  tools: PropTypes.array,
+  tools: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      color: PropTypes.string,
+    })
+  ),
 };
 
 export default ProjectListsCard;

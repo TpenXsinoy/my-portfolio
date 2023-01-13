@@ -43,23 +43,39 @@
     margin-top: auto;
   }
 
-  &___HTML {
+  &___orange {
     background-color: #dd4b25;
   }
 
-  &___JAVASCRIPT {
+  &___yellow {
     background-color: #cab812;
   }
 
-  &___CSS {
+  &___blue {
     background-color: #2862e9;
   }
 
-  &___REACT {
+  &___lightBlue {
     background-color: #48aeca;
   }
 
-  &___SASS {
+  &___pink {
     background-color: #c76494;
+  }
+
+  &___violet {
+    background-color: #37008c;
+  }
+
+  &___green {
+    background-color: #00935b;
+  }
+
+  &___lightOrange {
+    background-color: #d06f30;
+  }
+
+  &___black {
+    background-color: $black-500;
   }
 }
