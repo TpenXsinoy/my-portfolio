@@ -42,7 +42,7 @@ const ProjectListsCard = ({ image, name, detail, link, tools }) => {
                 )}
                 key={tool}
               >
-                {tool}
+                <Text>{tool}</Text>
               </div>
             ))}
           </div>
