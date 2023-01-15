@@ -4,7 +4,7 @@ import IdentityApp from "../../../static/images/projects/identity-app.png";
 const backendProjects = [
   {
     image: QuizApi,
-    name: " QUIZ API",
+    name: " Quiz API",
     detail:
       "This project provides features that make it possible to efficiently manage takers, quizzes, topics, questions, taker's answers, and quiz results in a quiz system.",
     link: "https://github.com/TpenXsinoy/quiz-api",
