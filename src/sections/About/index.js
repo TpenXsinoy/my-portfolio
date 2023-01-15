@@ -104,7 +104,7 @@ const About = () => {
               I have a strong understanding of the basics of web development
               principles. Familiar with{" "}
               <span className={styles.About_span}>
-                JavaScript, React, C#, Java, ASP.NET CORE
+                JavaScript, React, C#, Java, ASP.NET CORE WEB API
               </span>{" "}
               and always looking to expand my knowledge and skills in the field.
             </Text>
