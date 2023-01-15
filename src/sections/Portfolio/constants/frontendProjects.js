@@ -10,6 +10,7 @@ const frontendProjects = [
     detail:
       "This project helped me enhance my JavaScript skills and in layouting the elements",
     link: "https://tpenxsinoy.github.io/xmuse/",
+    buttonText: "Checkout Website",
     tools: [
       {
         name: "HTML",
@@ -31,6 +32,7 @@ const frontendProjects = [
     detail:
       "Doing this project deepened my ability in utilizing REACT in building responsive and user-friendly web applications",
     link: null,
+    buttonText: "Checkout My Work",
     tools: [
       {
         name: "REACT",
@@ -52,6 +54,7 @@ const frontendProjects = [
     detail:
       "This is project improved my skills on layouting and visualizing the arrangement of the elements in a website",
     link: "https://tpenxsinoy.github.io/alivee/",
+    buttonText: "Checkout Website",
     tools: [
       {
         name: "HTML",
@@ -69,6 +72,7 @@ const frontendProjects = [
     detail:
       "This project allowed me to understand dom manipulation and local storage management better",
     link: "https://tpenxsinoy.github.io/ToDo-App/",
+    buttonText: "Checkout Website",
     tools: [
       {
         name: "HTML",

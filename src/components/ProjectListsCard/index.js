@@ -11,7 +11,7 @@ import { buttonTypes, textTypes } from "elements/constants";
 
 import styles from "./styles.module.scss";
 
-const ProjectListsCard = ({ image, name, detail, link, tools }) => {
+const ProjectListsCard = ({ image, name, detail, link, buttonText, tools }) => {
   const [isCodechumModalOpen, setIsCodechumModalOpen] = useState(false);
   return (
     <>
@@ -54,7 +54,7 @@ const ProjectListsCard = ({ image, name, detail, link, tools }) => {
             className={styles.ProjectListsCard_button}
             type={buttonTypes.SECONDARY.GREEN}
           >
-            <Text type={textTypes.HEADING.XXXS}>Checkout Website</Text>
+            <Text type={textTypes.HEADING.XXXS}>{buttonText}</Text>
           </ButtonLink>
         ) : (
           <Button
@@ -64,7 +64,7 @@ const ProjectListsCard = ({ image, name, detail, link, tools }) => {
               setIsCodechumModalOpen(true);
             }}
           >
-            <Text type={textTypes.HEADING.XXXS}>Checkout Website</Text>
+            <Text type={textTypes.HEADING.XXXS}>{buttonText}</Text>
           </Button>
         )}
       </Card>
@@ -82,6 +82,7 @@ ProjectListsCard.propTypes = {
   name: PropTypes.string.isRequired,
   detail: PropTypes.string.isRequired,
   link: PropTypes.string,
+  buttonText: PropTypes.string.isRequired,
   tools: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,

@@ -49,6 +49,7 @@ const Portfolio = () => {
                 name={project.name}
                 detail={project.detail}
                 link={project.link}
+                buttonText={project.buttonText}
                 tools={project.tools}
                 key={project.name}
               />
@@ -60,6 +61,7 @@ const Portfolio = () => {
                 name={project.name}
                 detail={project.detail}
                 link={project.link}
+                buttonText={project.buttonText}
                 tools={project.tools}
                 key={project.name}
               />
