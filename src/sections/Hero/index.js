@@ -51,7 +51,7 @@ const Hero = () => {
           >
             I’m a{" "}
             <span className={styles.Hero_details_span}>Web developer</span>{" "}
-            passionate about elevating your online presence.
+            passionate to elevating your online presence
           </Text>
 
           <div className={styles.Hero_details_socials}>
