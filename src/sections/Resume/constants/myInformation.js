@@ -17,29 +17,6 @@ const myInformation = [
     ],
   },
   {
-    title: "Work Experience",
-    infos: [
-      {
-        name: "FRONT-END DEVELOPER",
-        subInfo: null,
-        details: [
-          "Implements new UI/UX designs to the application",
-          "Builds reusable codes and optimizes page",
-          "Develops new user-facing features that ensures  website visitors can easily interact with the page",
-        ],
-        date: "May 22, 2022 - August 31, 2022",
-        org: "Codechum",
-      },
-      {
-        name: "FREELANCE",
-        subInfo: null,
-        details: ["Landing Page Maker", "Graphic Designer"],
-        date: "2022 - Present",
-        org: "Social Media",
-      },
-    ],
-  },
-  {
     title: "Education",
     infos: [
       {
@@ -50,7 +27,9 @@ const myInformation = [
           "TOP 10 Presidential Scholar S.Y. 2021-2022",
           "Parangal Awardee (College Scholar 2020-2022)",
           "Academic Scholar S.Y. 2020-2021",
-          "4th Runner Up Pitch Perfect ",
+          "4th Runner Up Pitch Perfect",
+          "Computer Students' Society CIT-U Member",
+          "Google Developer Students Clubs Club CIT-U Member",
         ],
         date: "2020 - 2023",
         org: "Cebu Institute of Technology - University",
@@ -71,6 +50,33 @@ const myInformation = [
         details: ["With Honors S.Y. 2016-2018"],
         date: "2014 - 2018",
         org: "St. Scholastica’s Academy - Tabunok",
+      },
+    ],
+  },
+  {
+    title: "Work Experience",
+    infos: [
+      {
+        name: "FRONT-END DEVELOPER",
+        subInfo: null,
+        details: [
+          "Implements new UI/UX designs to the application",
+          "Builds reusable codes and optimizes page",
+          "Develops new user-facing features that ensures  website visitors can easily interact with the page",
+        ],
+        date: "May 22, 2022 - August 31, 2022",
+        org: "Codechum",
+      },
+      {
+        name: "FREELANCE",
+        subInfo: null,
+        details: [
+          "Develops Landing Page",
+          "Designs Business Logos",
+          "Designs Banners",
+        ],
+        date: "2022 - Present",
+        org: "Freelance",
       },
     ],
   },
