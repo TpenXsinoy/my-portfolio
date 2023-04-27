@@ -17,11 +17,19 @@ const skills = [
   },
   {
     name: "C#",
-    percent: 40,
+    percent: 65,
   },
   {
     name: "JAVA",
-    percent: 65,
+    percent: 50,
+  },
+  {
+    name: "GIT",
+    percent: 80,
+  },
+  {
+    name: "DOCKER",
+    percent: 45,
   },
 ];
 

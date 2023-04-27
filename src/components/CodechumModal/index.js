@@ -66,7 +66,7 @@ const CodechumModal = ({ isOpen, onClose }) => {
 
       <Slider {...sliderSettings}>
         {images.map((image) => (
-          <img
+          <svg
             src={image}
             className={styles.Modal_image}
             alt="Logo"

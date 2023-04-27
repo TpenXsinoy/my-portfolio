@@ -101,7 +101,7 @@ const About = () => {
             </div>
 
             <Text className={styles.About_content_info_summary}>
-              I have a strong understanding of the basics of web development
+              I have a solid understanding of the basics of web development
               principles. Familiar with{" "}
               <span className={styles.About_span}>
                 JavaScript, React, C#, Java, ASP.NET CORE WEB API

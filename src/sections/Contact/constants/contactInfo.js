@@ -14,7 +14,7 @@ const contactInfo = [
   {
     icon: "email",
     name: "Email Me",
-    detail: "stephine.n.sinoy@gmail.com",
+    detail: "sinoystephine@gmail.com",
     hasSocials: false,
   },
   {

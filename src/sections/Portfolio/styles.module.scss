@@ -7,20 +7,8 @@
     gap: 36px;
     margin-top: 40px;
 
-    > div {
-      &:nth-of-type(4){
-        grid-column-end: 3;
-      }
-    }
-
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       grid-template-columns: 1fr 1fr;
-
-      > div {
-        &:nth-of-type(4){
-          grid-column-end: unset;
-        }
-      }
     }
 
     @include breakpoint(sm) {
@@ -44,6 +32,9 @@
 
       &:nth-of-type(4){
         animation: zoomIn 2s ease-in-out;
+      }
+      &:nth-of-type(5){
+        animation: zoomIn 2.5s ease-in-out;
       }
     }
    

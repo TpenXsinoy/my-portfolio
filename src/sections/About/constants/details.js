@@ -21,7 +21,7 @@ const details = [
   },
   {
     name: "Email:",
-    info: "stephine.n.sinoy@gmail.com",
+    info: "sinoystephine@gmail.com",
   },
 ];
 
