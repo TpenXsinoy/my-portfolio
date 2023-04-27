@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.55901598.css",
-    "main.js": "/my-portfolio/static/js/main.04194558.js",
+    "main.css": "/my-portfolio/static/css/main.bad48c16.css",
+    "main.js": "/my-portfolio/static/js/main.d72357bf.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/material-icons-two-tone.woff": "/my-portfolio/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/material-icons-two-tone.woff2": "/my-portfolio/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
     "static/media/material-icons-round.woff": "/my-portfolio/static/media/material-icons-round.5d681e2edae8c60630db.woff",
     "static/media/material-icons-outlined.woff": "/my-portfolio/static/media/material-icons-outlined.f882956fd323fd322f31.woff",
+    "static/media/pokemon.png": "/my-portfolio/static/media/pokemon.694b5b7b7544093ccb2b.png",
     "static/media/material-icons-round.woff2": "/my-portfolio/static/media/material-icons-round.c380809fd3677d7d6903.woff2",
     "static/media/profile-pic.webp": "/my-portfolio/static/media/profile-pic.da0d26a56aab4f7b5140.webp",
     "static/media/material-icons.woff": "/my-portfolio/static/media/material-icons.4d73cb90e394b34b7670.woff",
@@ -58,12 +59,12 @@
     "static/media/slick.ttf": "/my-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/my-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/my-portfolio/index.html",
-    "main.55901598.css.map": "/my-portfolio/static/css/main.55901598.css.map",
-    "main.04194558.js.map": "/my-portfolio/static/js/main.04194558.js.map",
+    "main.bad48c16.css.map": "/my-portfolio/static/css/main.bad48c16.css.map",
+    "main.d72357bf.js.map": "/my-portfolio/static/js/main.d72357bf.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55901598.css",
-    "static/js/main.04194558.js"
+    "static/css/main.bad48c16.css",
+    "static/js/main.d72357bf.js"
   ]
 }
