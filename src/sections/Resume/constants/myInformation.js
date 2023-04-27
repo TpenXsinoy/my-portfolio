@@ -20,7 +20,7 @@ const myInformation = [
     title: "Work Experience",
     infos: [
       {
-        name: "FRONT-END DEVELOPER",
+        name: "FRONT-END DEVELOPER - INTERN",
         subInfo: null,
         details: [
           "Implements new UI/UX designs to the application",
