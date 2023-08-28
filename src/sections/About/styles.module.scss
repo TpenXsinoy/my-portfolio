@@ -89,17 +89,21 @@
   &_skills {
     margin-top: 24px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     column-gap: 48px;
     row-gap: 24px;
 
     @include breakpoint(md) {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(4, 1fr);
     }
 
     @include breakpoint(sm) {
-      margin-top: 20px;
-      row-gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint(xs) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
     }
   }
 

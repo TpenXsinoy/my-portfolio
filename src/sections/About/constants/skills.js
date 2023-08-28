@@ -1,35 +1,64 @@
+import html from "../../../static/images/skills/html.png";
+import sass from "../../../static/images/skills/sass.png";
+import react from "../../../static/images/skills/react.png";
+import csharp from "../../../static/images/skills/csharp.png";
+import asp from "../../../static/images/skills/asp.png";
+import java from "../../../static/images/skills/java.png";
+import sql from "../../../static/images/skills/sql.png";
+import orm from "../../../static/images/skills/orm.png";
+import git from "../../../static/images/skills/git.png";
+import docker from "../../../static/images/skills/docker.png";
+import azure from "../../../static/images/skills/azure.png";
+import figma from "../../../static/images/skills/figma.png";
+
 const skills = [
   {
     name: "HTML",
-    percent: 95,
+    image: html,
   },
   {
     name: "CSS",
-    percent: 85,
-  },
-  {
-    name: "JAVASCRIPT",
-    percent: 65,
+    image: sass,
   },
   {
     name: "REACT",
-    percent: 60,
+    image: react,
   },
   {
     name: "C#",
-    percent: 65,
+    image: csharp,
+  },
+  {
+    name: "ASP.NET CORE",
+    image: asp,
   },
   {
     name: "JAVA",
-    percent: 50,
+    image: java,
+  },
+  {
+    name: "SQL",
+    image: sql,
+  },
+  {
+    name: "ORM",
+    image: orm,
   },
   {
     name: "GIT",
-    percent: 80,
+    image: git,
   },
   {
     name: "DOCKER",
-    percent: 45,
+    image: docker,
+  },
+  {
+    name: "AZURE",
+    image: azure,
+  },
+  {
+    name: "FIGMA",
+    image: figma,
   },
 ];
 

@@ -11,7 +11,7 @@ import { SkillList, SectionHeader } from "components";
 import { textTypes } from "elements/constants";
 import { skills, details } from "./constants";
 
-import SideProfile from "../../static/images/profiles/side-profile.webp";
+import SideProfile from "../../static/images/profiles/profile-pic2.png";
 
 import styles from "./styles.module.scss";
 
@@ -48,7 +48,7 @@ const About = () => {
               isContentVisible && styles.About___animateImage
             )}
           >
-            <img src={SideProfile} alt="Profile" />
+            <img src={SideProfile} alt="Profile" width={400} />
           </div>
 
           <div
@@ -104,7 +104,8 @@ const About = () => {
               I have a solid understanding of the basics of web development
               principles. Familiar with{" "}
               <span className={styles.About_span}>
-                JavaScript, React, C#, Java, ASP.NET CORE WEB API
+                JavaScript (React), C# (ASP.NET CORE), Java(Springboot), SQL
+                Server, MySQL
               </span>{" "}
               and always looking to expand my knowledge and skills in the field.
             </Text>
@@ -114,12 +115,13 @@ const About = () => {
         <Text type={isMobile ? textTypes.HEADING.LG : textTypes.HEADING.XL}>
           SKILLS
         </Text>
+
         <div ref={skillsRef} className={styles.About_skills}>
           {skills.map((skill) => (
             <SkillList
               isVisible={isSkillsVisible}
-              title={skill.name}
-              percent={skill.percent}
+              name={skill.name}
+              image={skill.image}
               key={skill.name}
             />
           ))}
