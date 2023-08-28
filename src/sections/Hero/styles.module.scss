@@ -9,7 +9,7 @@
 
     &::before {
       animation: fadeIn2 1s ease-in-out;
-      background: url('../../static/images/profiles/profile-pic.webp');
+      background: url('../../static/images/profiles/profile-pic1.png');
       background-repeat: no-repeat;
       background-size: cover;
       bottom: 0;
@@ -20,6 +20,10 @@
       top: 50px;
       z-index: -1;
       opacity: 0.3;
+
+      @include breakpoint(xs) {
+        left: 0;
+      }
     }
   }
 

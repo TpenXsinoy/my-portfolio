@@ -7,7 +7,7 @@ import { Container, Section, Text } from "elements";
 import { textTypes } from "elements/constants";
 import { SocialIcon } from "react-social-icons";
 
-import Profile from "../../static/images/profiles/profile-pic.webp";
+import Profile from "../../static/images/profiles/profile-pic1.png";
 
 import styles from "./styles.module.scss";
 
@@ -99,7 +99,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.Hero_image}>
-          <img src={Profile} alt="Profile" />
+          <img src={Profile} alt="Profile" width={isSmallDesktop ? 400 : 600} />
         </div>
       </Container>
     </Section>
