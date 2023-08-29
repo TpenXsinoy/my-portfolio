@@ -1,6 +1,6 @@
 {
-  "homepage": "https://tpenxsinoy.github.io/portfolio",
-  "name": "portfolio",
+  "homepage": "https://tpenxsinoy.github.io/my-portfolio",
+  "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

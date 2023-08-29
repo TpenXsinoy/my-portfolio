@@ -2,11 +2,6 @@
 
 https://tpenxsinoy.github.io/my-portfolio/
 
-# TODO
-
-- Resume Section will still be finalized.
-- Tabs will be added in Portfolio section with more projects/activities.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
