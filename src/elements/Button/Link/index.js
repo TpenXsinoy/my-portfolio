@@ -3,8 +3,6 @@ import React from "react";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-import { Link } from "react-router-dom";
-
 import { Icon } from "../..";
 import buttonTypes from "../constants/buttonTypes";
 import styles from "../styles.module.scss";
@@ -20,6 +18,7 @@ const ButtonLink = ({
   disabled,
   onClick,
   shouldOpenNewTab,
+  download,
 }) => {
   const allChildren = (
     <>
@@ -34,7 +33,7 @@ const ButtonLink = ({
     </>
   );
 
-  return to.startsWith("http") ? (
+  return (
     <a
       className={cn(
         className,
@@ -52,28 +51,10 @@ const ButtonLink = ({
       tabIndex={tabIndex}
       target={shouldOpenNewTab ? "_blank" : null}
       onClick={onClick}
+      download={download}
     >
       {allChildren}
     </a>
-  ) : (
-    <Link
-      className={cn(
-        className,
-        styles.Button___link,
-        styles[`Button___${type}`],
-        {
-          [styles.Button___withIcon]: icon !== null,
-          [styles.Button___disabled]: disabled,
-        }
-      )}
-      data-test="reactRouterLink"
-      id={id}
-      tabIndex={tabIndex}
-      to={to}
-      onClick={onClick}
-    >
-      {allChildren}
-    </Link>
   );
 };
 
@@ -86,6 +67,7 @@ ButtonLink.defaultProps = {
   disabled: false,
   onClick: null,
   shouldOpenNewTab: true,
+  download: null,
 };
 
 ButtonLink.propTypes = {
@@ -107,6 +89,7 @@ ButtonLink.propTypes = {
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   shouldOpenNewTab: PropTypes.bool,
+  download: PropTypes.string,
 };
 
 export default ButtonLink;

@@ -7,11 +7,11 @@ $yellow-shadow: 0px 8px 40px -8px rgba(248, 209, 29, 0.35);
   &___primary {
     &___green {
       @include primary(
-        $gray-200, 
-        $green-100, 
-        $green-100, 
-        $neutral-0, 
-        $red-shadow
+        $green-200,
+        $green-100,
+        $neutral-400,
+        $neutral-0,
+        $yellow-shadow
       );
     }
 
