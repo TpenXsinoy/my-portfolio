@@ -42,13 +42,7 @@ const Hero = () => {
             Stephine Sinoy
           </Text>
 
-          <Text
-            type={(() => {
-              if (isSmallDesktop || isTablet) return textTypes.BODY.LG;
-              else if (isMobile || isSmallMobile) return textTypes.BODY.SM;
-              return textTypes.BODY.XL;
-            })()}
-          >
+          <Text className={styles.Hero_details_description}>
             I’m a{" "}
             <span className={styles.Hero_details_span}>Web developer</span>{" "}
             passionate on elevating your online presence

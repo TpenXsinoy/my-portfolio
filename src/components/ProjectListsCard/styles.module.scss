@@ -4,19 +4,47 @@
   align-items: center;
   background-color: $gray-200;
   border: none;
-  box-shadow: $shadow-raised;
+  box-shadow: $shadow-normal;
   display: flex;
   flex-direction: column;
   padding: 24px 24px 24px 24px;
   text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-bottom: 40px;
+  opacity: 0.6;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $shadow-raised;
+    opacity: 1;
+    transform: scale(1.03);
+    z-index: 1;
+
+    .ProjectListsCard_details {
+      top: 94%;
+      opacity: 1;
+    }
+  }
 
   &_image {
-    margin: -1.5rem -2.5rem 0 -2.5rem;
     margin: -1.5rem 1.5rem 0 1.5rem;
     width: calc(100% + 3rem);
   }
   &_title {
-    padding: 20px 0 12px 0;
+    padding-top: 20px;
+  }
+
+  &_details {
+    border-radius: 0 0 16px 16px;
+    position: absolute;
+    top: calc(100% - 70px);
+    background-color: $gray-200;
+    padding: 0 24px 24px 24px;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    z-index: 1;
   }
 
   &_detail {
@@ -28,8 +56,10 @@
   }
 
   &_tools {
-    margin-bottom: 32px;
-    @include flex-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
     
     &_tool {
       border-radius: 16px;

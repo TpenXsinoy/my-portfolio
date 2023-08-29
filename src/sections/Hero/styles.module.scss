@@ -42,6 +42,14 @@
       animation: fadeIn 1s ease-in-out;
     }
 
+    &_description {
+      font-size: 22px;
+
+      @include breakpoint(sm) {
+        @include body(0.875rem, 1.5);
+      }
+    }
+
     &_name {
       overflow: hidden; 
       border-right: 4px solid $green-100; 

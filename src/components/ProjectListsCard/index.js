@@ -6,12 +6,12 @@ import PropTypes from "prop-types";
 import GLOBALS from "app-globals";
 
 import CodechumModal from "components/CodechumModal";
-import { Button, ButtonLink, Card, Text } from "elements";
-import { buttonTypes, textTypes } from "elements/constants";
+import { Card, Text } from "elements";
+import { textTypes } from "elements/constants";
 
 import styles from "./styles.module.scss";
 
-const ProjectListsCard = ({ image, name, detail, link, buttonText, tools }) => {
+const ProjectListsCard = ({ image, name, detail, link, tools }) => {
   const [isCodechumModalOpen, setIsCodechumModalOpen] = useState(false);
   return (
     <>
@@ -19,7 +19,13 @@ const ProjectListsCard = ({ image, name, detail, link, buttonText, tools }) => {
         isOpen={isCodechumModalOpen}
         onClose={() => setIsCodechumModalOpen(false)}
       />
-      <Card className={styles.ProjectListsCard}>
+
+      <Card
+        className={styles.ProjectListsCard}
+        onClick={() => {
+          link ? window.open(link, "_blank") : setIsCodechumModalOpen(true);
+        }}
+      >
         <img className={styles.ProjectListsCard_image} src={image} alt={name} />
 
         <Text
@@ -30,43 +36,25 @@ const ProjectListsCard = ({ image, name, detail, link, buttonText, tools }) => {
           {name}
         </Text>
 
-        <Text className={styles.ProjectListsCard_detail}>{detail}</Text>
+        <div className={styles.ProjectListsCard_details}>
+          <Text className={styles.ProjectListsCard_detail}>{detail}</Text>
 
-        {tools && (
-          <div className={styles.ProjectListsCard_tools}>
-            {tools.map((tool) => (
-              <div
-                className={cn(
-                  styles.ProjectListsCard_tools_tool,
-                  styles[`ProjectListsCard___${tool.color}`]
-                )}
-                key={tool.name}
-              >
-                <Text>{tool.name}</Text>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {link ? (
-          <ButtonLink
-            to={link}
-            className={styles.ProjectListsCard_button}
-            type={buttonTypes.SECONDARY.GREEN}
-          >
-            <Text type={textTypes.HEADING.XXXS}>{buttonText}</Text>
-          </ButtonLink>
-        ) : (
-          <Button
-            className={styles.ProjectListsCard_button}
-            type={buttonTypes.SECONDARY.GREEN}
-            onClick={() => {
-              setIsCodechumModalOpen(true);
-            }}
-          >
-            <Text type={textTypes.HEADING.XXXS}>{buttonText}</Text>
-          </Button>
-        )}
+          {tools && (
+            <div className={styles.ProjectListsCard_tools}>
+              {tools.map((tool) => (
+                <div
+                  className={cn(
+                    styles.ProjectListsCard_tools_tool,
+                    styles[`ProjectListsCard___${tool.color}`]
+                  )}
+                  key={tool.name}
+                >
+                  <Text>{tool.name}</Text>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </Card>
     </>
   );
@@ -82,7 +70,6 @@ ProjectListsCard.propTypes = {
   name: PropTypes.string.isRequired,
   detail: PropTypes.string.isRequired,
   link: PropTypes.string,
-  buttonText: PropTypes.string.isRequired,
   tools: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,

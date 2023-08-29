@@ -5,7 +5,14 @@
   flex-direction: column;
 
   &___animate {
-    animation: zoomIn 1.5s ease-in-out;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  &:hover {
+    > img {
+      transform: scale(1.2);
+      box-shadow: $shadow-normal;
+    }
   }
 }
 

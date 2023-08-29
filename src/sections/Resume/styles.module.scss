@@ -11,15 +11,14 @@
 
     > div {
       &:nth-of-type(3){
-        margin-top: -32rem;
+        margin-top: -55rem;
 
         @include breakpoint(md) {
-          margin-top: -36rem;
+          margin-top: -75rem;
         }
 
         @include breakpoint(sm) {
           margin-top: 40px;
-       
         }
       }
     }
