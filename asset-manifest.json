@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.47a14c63.css",
-    "main.js": "/my-portfolio/static/js/main.b0e51588.js",
+    "main.js": "/my-portfolio/static/js/main.1ca67f7c.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/quiz-wizard.png": "/my-portfolio/static/media/quiz-wizard.6dbd1e0259895514e4eb.png",
     "static/media/material-icons-two-tone.woff": "/my-portfolio/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
-    "static/media/resume.pdf": "/my-portfolio/static/media/resume.e86d66fe694333856ad6.pdf",
+    "static/media/sinoy-resume.pdf": "/my-portfolio/static/media/sinoy-resume.95431cd9923c47616e75.pdf",
     "static/media/material-icons-two-tone.woff2": "/my-portfolio/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
     "static/media/material-icons-round.woff": "/my-portfolio/static/media/material-icons-round.5d681e2edae8c60630db.woff",
     "static/media/material-icons-outlined.woff": "/my-portfolio/static/media/material-icons-outlined.f882956fd323fd322f31.woff",
@@ -69,11 +69,11 @@
     "static/media/slick.woff": "/my-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/my-portfolio/index.html",
     "main.47a14c63.css.map": "/my-portfolio/static/css/main.47a14c63.css.map",
-    "main.b0e51588.js.map": "/my-portfolio/static/js/main.b0e51588.js.map",
+    "main.1ca67f7c.js.map": "/my-portfolio/static/js/main.1ca67f7c.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47a14c63.css",
-    "static/js/main.b0e51588.js"
+    "static/js/main.1ca67f7c.js"
   ]
 }
