@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fb8f1263.css",
-    "main.js": "/portfolio/static/js/main.b564258f.js",
+    "main.css": "/portfolio/static/css/main.30f78a66.css",
+    "main.js": "/portfolio/static/js/main.02f24ba1.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/quiz-wizard.png": "/portfolio/static/media/quiz-wizard.6dbd1e0259895514e4eb.png",
     "static/media/material-icons-two-tone.woff": "/portfolio/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.e86d66fe694333856ad6.pdf",
     "static/media/material-icons-two-tone.woff2": "/portfolio/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
     "static/media/material-icons-round.woff": "/portfolio/static/media/material-icons-round.5d681e2edae8c60630db.woff",
     "static/media/material-icons-outlined.woff": "/portfolio/static/media/material-icons-outlined.f882956fd323fd322f31.woff",
@@ -67,12 +68,12 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.fb8f1263.css.map": "/portfolio/static/css/main.fb8f1263.css.map",
-    "main.b564258f.js.map": "/portfolio/static/js/main.b564258f.js.map",
+    "main.30f78a66.css.map": "/portfolio/static/css/main.30f78a66.css.map",
+    "main.02f24ba1.js.map": "/portfolio/static/js/main.02f24ba1.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb8f1263.css",
-    "static/js/main.b564258f.js"
+    "static/css/main.30f78a66.css",
+    "static/js/main.02f24ba1.js"
   ]
 }
