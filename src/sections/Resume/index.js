@@ -10,7 +10,7 @@ import { ResumeInfo, SectionHeader } from "components";
 import { ButtonLink, Container, Section, Text } from "elements";
 import myInformation from "./constants/myInformation";
 import { buttonTypes, textTypes } from "elements/constants";
-import resume from "../../static/resume.pdf";
+import resume from "../../static/sinoy-resume.pdf";
 
 import styles from "./styles.module.scss";
 

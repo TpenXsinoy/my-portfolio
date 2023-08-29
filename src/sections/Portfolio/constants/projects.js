@@ -85,7 +85,7 @@ const projects = [
     image: Codechum,
     name: "Codechum Landing Page",
     detail:
-      "This project involves recreating the landing page of CodeChum, a platform dedicated to programming education.",
+      "This project involves recreating the mobile responsive landing page of CodeChum, a platform dedicated to programming education.",
     link: null,
     tools: [
       {
